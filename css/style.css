@@ -152,15 +152,19 @@ header .fa-bars{
 .home .content{
     max-width: 50rem;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .content h3{
+    position: relative;
+    left: 15px;
     font-size: 6rem;
     color: #ffffff;
 }
 
 .home .content span{
+    position: relative;
+    left: 15px;
     font-size: 3.5rem;
     color:var(--pink);
     padding: 1rem 0;
@@ -168,10 +172,17 @@ header .fa-bars{
 }
 
 .home .content p{
+    position: relative;
+    left: 15px;
     font-size: 1.5rem;
     color: #333;
     padding: 1rem 0;
     line-height: 1.5;
+}
+
+.home .content a{
+    position: relative;
+    left: 15px;
 }
 
 .about .row{
