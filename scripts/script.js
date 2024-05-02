@@ -6,12 +6,15 @@ form.addEventListener("submit", (e)=>{
     const Email = document.getElementById("email").value
     const password = document.getElementById("password").value
 
+    const error_message = document.getElementById("error")
+
     if(auth(Email, password)){
         alert("correct")
         Email.value = ""
         password.value = ""
+        error_message.style.visibility = "hidden";
     }else {
-        alert("wrong")
+        error_message.style.visibility = "visible";
     }
 })
 
