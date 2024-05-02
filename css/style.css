@@ -94,12 +94,11 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    display: inline-flex;
     color: black;
     border-radius: .5rem;
     background-color: var(--pink);
     border: .1rem var(--pink);
-    transform: translateY(3px);
+    font-size: 2.2rem;
 }
 
 header .icons a{
@@ -490,7 +489,7 @@ header .fa-bars{
         top: 100%;
         left: 0;
         right: 0;
-        background: #eee;
+        background: #000000;
         border-top: .1rem solid rgba(0, 0, 0, .1);
         clip-path: polygon(0 0, 100% 0, 100% 0,  0 0);
     }
@@ -502,7 +501,7 @@ header .fa-bars{
     header .navbar a{
         margin: 1.5rem;
         padding: 1.5rem;
-        background: #fff;
+        background: #3b3b3b;
         border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
     }
