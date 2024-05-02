@@ -548,3 +548,55 @@ header .fa-bars{
     }
 
 }
+
+
+
+.wartung-container{
+    width: 100vw;
+    height: 100vw;
+    background-image: url("../assets/Untitled.png");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.wartung-container .logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.wartung-content{
+    top: 25%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.wartung-content p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.wartung-content h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+.wartung-content h1 span{
+    color: var(--pink);
+}
+.rocket{
+    width: 25px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 200px;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 50%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
