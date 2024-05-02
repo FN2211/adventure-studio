@@ -23,10 +23,10 @@ html{
 .heading{
     text-align: center;
     font-size: 4rem;
-    color: #333;
+    color: #9b9b9b;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .heading span{
@@ -231,7 +231,7 @@ header .fa-bars{
 
 .products{
     min-height: 100vh;
-    background:url(https://static.vecteezy.com/ti/gratis-vektor/p3/19814864-elefant-silhouetten-im-savanne-landschaft-hintergrund-illustration-vektor.jpg) no-repeat;
+    background:url("../assets/logo.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -247,7 +247,7 @@ header .fa-bars{
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
-    background: #fff;
+    background: #4e4e4e;
     position: relative;
 }
 
@@ -257,7 +257,7 @@ header .fa-bars{
     padding: .7rem 1rem;
     font-size: 2rem;
     color: var(--pink);
-    background: rgba(255, 51, 153, .05);
+    background: rgb(68, 65, 66);
     z-index: 1;
     border-radius: .5rem;
 }
@@ -314,7 +314,7 @@ header .fa-bars{
 
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color: #333;
+    color: #ffffff;
 }
 
 .products .box-container .box .content .price{
@@ -328,13 +328,105 @@ header .fa-bars{
     font-size: 1.5rem;
     color: #999;
     font-weight: lighter;
-    text-decoration: line-through;
 }
 
 
+.mitglieder{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("https://wallpapers.com/images/hd/nice-background-13xya2395sh0535y.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.mitglieder h2{
+    display: flex;
+    position: absolute;
+    margin-bottom: 900px;
+}
 
+.mitglieder .wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.mitglieder .wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    position: absolute;
+    font-size: 3em;
+    color: var(--pink);
+    text-align: center;
+    left: 150px;
+    margin-bottom: 150px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--pink);
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--pink);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0;
+    text-transform: none;
+}
+
+.input-box span{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--pink);
+    line-height: 57px;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 
 
