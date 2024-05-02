@@ -481,7 +481,7 @@ header .fa-bars{
 
 }
 
-@media (max-width:768px){
+@media (max-width:1200px){
     
     header .fa-bars{
         display: block;
