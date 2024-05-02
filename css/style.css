@@ -111,7 +111,7 @@ header .navbar a{
 header .navbar a:hover{
     color: black;
     border-radius: .5rem;
-    background-color: var(--pink);
+    background-color: #fff;
     border: .1rem var(--pink);
     font-size: 2.2rem;
 }
