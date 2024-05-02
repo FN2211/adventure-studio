@@ -441,6 +441,7 @@ header .fa-bars{
     color: #ff0000;
     font-size: 1.2em;
     top: 15px;
+    visibility: hidden;
 }
 
 
