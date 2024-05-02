@@ -94,11 +94,12 @@ header .navbar a{
 }
 
 header .navbar a:hover{
+    display: inline-flex;
     color: black;
-    border: .1rem solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
     background-color: var(--pink);
-    transition: .5s;
+    border: .1rem var(--pink);
+    transform: translateY(3px);
 }
 
 header .icons a{
