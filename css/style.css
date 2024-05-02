@@ -114,7 +114,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url('../assets/logo.png') no-repeat;
+    background-color: #4e4e4e;
     /*background:url(https://static.vecteezy.com/system/resources/previews/019/814/859/non_2x/elephants-in-the-savannah-at-night-illustration-vector.jpg) no-repeat;*/
     background-size: cover;
     background-position: center;
