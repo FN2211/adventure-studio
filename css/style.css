@@ -152,14 +152,14 @@ header .fa-bars{
 .home .content{
     max-width: 65rem;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .home .content h3{
     position: relative;
     left: 15px;
     font-size: 6rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .home .content span{
