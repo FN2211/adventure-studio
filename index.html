@@ -1,31 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Wartung</title>
+    <title>Adventure Studio</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/little_logo.png">
 </head>
 <body>
-    <div class="wartung">
-        <div class="wartung-container">
-            <img src="./assets/little_logo.png" class="wartung-logo">
-    
-            <div class="wartung-content">
-                <p>Website is under maintenance</p>
-                <h1>We're <span>launching</span> soon</h1>
-                <a href="" class="btn">Learn More</a>
-            </div>
-    
-            <img src="./assets/planet.png" class="rocket">
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo"><img src="./assets/little_logo.png">Adventure Studio<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#" id="home">Startseite</a>
+            <a href="#about">über uns</a>
+            <a href="#products">projekte</a>
+            <a href="#mitglieder">mitglieder</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#mitglieder" class="fas fa-user"></a>
         </div>
-    
-        <footer>
-            Copyright &copy;<script>document.write(new Date().getFullYear())</script>, Adventure Studio
-            <a href="impressum.html">| Impressum</a>
-            <a href="impressum.html">| AGB</a>
-            <a href="impressum.html">| Newsletter</a>
-        </footer>
-    </div>
+
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Adventure Studio</h3>
+            <span>Mit uns wird jede Deadline zu einer Überraschungsparty</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci at, ipsum quam reiciendis ea inventore rerum necessitatibus hic voluptatibus beatae magnam asperiores doloremque quia quas omnis cupiditate saepe repellat!</p>
+            <a href="#products" class="btn">jetzt entdecken</a>
+            <a href="#about" class="btn"><i class="fas fa-arrow-down"></i></a>
+        </div>
+
+    </section>
+
+
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span> über </span> uns </h1>
+
+        <div class="row">
+
+            <div class="video-container">
+                <video src="./assets/Trailer.mp4" loop autoplay muted></video>
+            </div>
+
+            <div class="content">
+                <h3>warum wir?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sint quam itaque laudantium vero ea! Obcaecati, dignissimos. Fugit tempore aliquid soluta quasi a quibusdam dolorem vel, magni voluptatibus unde recusandae!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sint quam itaque laudantium vero ea! Obcaecati, dignissimos. Fugit tempore aliquid soluta quasi a quibusdam dolorem vel, magni voluptatibus unde recusandae!</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="icons-container">
+        <div class="icons">
+            <img src="./assets/box.png" alt="">
+            <div class="info">
+                <h3>gratisversand*</h3>
+                <span>*ab einem warenwert von über 5999€</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="./assets/money-bag.png" alt="">
+            <div class="info">
+                <h3>2 Stunden rückgaberecht*</h3>
+                <span>*Die Rückzahlung des geldes kann nicht garantiert werden!</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="./assets/credit-cards.png" alt="">
+            <div class="info">
+                <h3>"Sichere" Bezahlung*</h3>
+                <span>*könnte unsicher sein</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> unsere <span>projekte</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">Status: Beendet</span>
+                <div class="image">
+                    <img src="https://www.mazzellacompanies.com/wp-content/uploads/2020/08/woocommerce-placeholder.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">Mehr</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Minecraft Adventure 1</h3>
+                    <div class="price"> Ver. 1.0.3 <span>Veröffentlicht: 2021</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">Status: In Arbeit</span>
+                <div class="image">
+                    <img src="https://www.mazzellacompanies.com/wp-content/uploads/2020/08/woocommerce-placeholder.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">Mehr</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Minecraft Adventure 2</h3>
+                    <div class="price"> Ver. ----- <span>Veröffentlicht: TBA</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+
+
+    <section class="mitglieder" id="mitglieder">
+        <h2>Adventure Login Solutions</h2>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="fas fa-envelope"></span>
+                        <input id="email" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="fas fa-lock"></span>
+                        <input id="password" type="password" required>
+                        <label>Passwort</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="error" id="error">
+                        <span class="fas fa-exclamation"> Die Anmeldung war nicht erfolgreich</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        Copyright &copy;<script>document.write(new Date().getFullYear())</script>, Adventure Studio
+        <br>
+        <a href="impressum.html"> Impressum</a>
+        <br>
+        <a href="impressum.html"> AGB</a>
+        <br>
+        <a href="impressum.html"> Newsletter</a>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
