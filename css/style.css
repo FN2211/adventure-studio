@@ -12,6 +12,9 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
+#logo:hover {
+  opacity: 0.5;
+}
 
 html{
     font-size: 62.5%;
