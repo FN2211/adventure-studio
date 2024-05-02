@@ -66,6 +66,12 @@ footer a{
     text-decoration: none;
     color: #ffffff;
 }
+footer a:hover{
+    color: black;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: .1rem var(--pink);
+}
 
 header{
     position: fixed;
