@@ -94,7 +94,11 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color: var(--pink);
+    color: black;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background-color: var(--pink);
+    transition: .5s;
 }
 
 header .icons a{
