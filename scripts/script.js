@@ -19,6 +19,16 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
+    '.home',
+    {opacity: 0 },
+    {
+        opacity:1,
+        duration: 1.5,
+        delay: 6
+    }
+);
+
+gsap.fromTo(
     '.loading-logo-name',
     { opacity: 0,
       y:50
