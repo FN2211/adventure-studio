@@ -434,6 +434,9 @@ header .fa-bars{
 .team .heading{
     background: rgba(0, 0, 0, 0.2);
 }
+.team .heading span{
+    color: #000000;
+}
 .team-card{
     margin-left: 3rem;
     text-align: center;
