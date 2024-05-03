@@ -451,7 +451,7 @@ header .fa-bars{
     transform: translateY(-10px);
 }
 .team-card img{
-    border: 100%;
+    border-radius: 100%;
     margin-top: 60px;
     width: 132px;
     height: 128px;
