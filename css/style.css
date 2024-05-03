@@ -404,6 +404,10 @@ header .fa-bars{
     box-shadow: 0 12px 13px #000000;
     color: #fff;
 }
+.team-card:hover{
+    background: #181818;
+    transform: translateY(-10px);
+}
 .team-card img{
     border: 100%;
     margin-top: 60px;
