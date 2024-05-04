@@ -433,7 +433,8 @@ header .fa-bars{
 }
 .team .heading{
     background: #000;
-    box-shadow: 0 12px 13px #000000;
+    box-shadow: 0 6px 7px #000000;
+    border-radius: 6px;
 }
 
 .team-card{
