@@ -1,7 +1,8 @@
 window.onload = function(){
     document.getElementById("loading").style.visibility = "visible";
-    setTimeout(7380)
-    document.getElementById("loading").style.visibility = "collapse";
+    setTimeout(() => {
+        document.getElementById("loading").style.visibility = "collapse";
+    }, "8000");
 }
 
 gsap.fromTo(
