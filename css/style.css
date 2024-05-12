@@ -289,11 +289,19 @@ header .fa-bars{
 
 .icons-container{
     background: #eee;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
+    width: 100%;
     gap: 1.5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 15px;
+    padding-bottom: 15rem;
+}
+.icons-container .heading{
+    position: relative;
+    background: #000;
+    box-shadow: 0 6px 7px #000000;
+    border-radius: 6px;
+    
 }
 .icons-container a{
     color: var(--pink);
@@ -301,12 +309,15 @@ header .fa-bars{
 }
 
 .icons-container .icons{
-    background: #fff;
+    position: relative;
+    background: #000000;
     border: .1rem solid rgba(0, 0, 0, .1);
     padding: 2rem;
     display: flex;
     align-items: center;
     flex: 1 1 25rem;
+    top: 5px;
+    margin-top: 15px;
 }
 
 .icons-container .icons img{
@@ -315,13 +326,13 @@ header .fa-bars{
 }
 
 .icons-container .icons h3{
-    color: #333;
+    color: #7C8097;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
 .icons-container .icons span{
-    color: #555;
+    color: #ffffff;
     font-size: 1.3rem;
 }
 
