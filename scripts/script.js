@@ -1,3 +1,5 @@
+
+
 gsap.fromTo(
     '.loading-page',
     {opacity: 1 },
@@ -27,6 +29,42 @@ gsap.fromTo(
         delay: 6
     }
 );
+gsap.fromTo(
+    '.about',
+    {opacity: 0 },
+    {
+        opacity:1,
+        duration: 1.5,
+        delay: 6
+    }
+);
+gsap.fromTo(
+    '.products',
+    {opacity: 0 },
+    {
+        opacity:1,
+        duration: 1.5,
+        delay: 6
+    }
+);
+gsap.fromTo(
+    '.team',
+    {opacity: 0 },
+    {
+        opacity:1,
+        duration: 1.5,
+        delay: 6
+    }
+);
+gsap.fromTo(
+    '.icons-container',
+    {opacity: 0 },
+    {
+        opacity:1,
+        duration: 1.5,
+        delay: 6
+    }
+);
 
 gsap.fromTo(
     '.loading-logo-name',
@@ -40,3 +78,4 @@ gsap.fromTo(
         delay: 0.5
     }
 );
+
