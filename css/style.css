@@ -194,15 +194,44 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380") no-repeat;
     background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
     background-position: center;
+    box-shadow: 0 6px 7px #000000;
+    animation: bgChange 60s linear infinite;
 }
 
 .home .content{
     max-width: 65rem;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes bgChange{
+    0%{
+        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+    }
+    20%{
+        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+    }
+    25%{
+        background-image: url("https://img.freepik.com/free-photo/tranquil-scene-nature-beauty-majestic-mountain-landscape-generated-by-artificial-intelligence_25030-65564.jpg?w=1380&t=st=1715537738~exp=1715538338~hmac=a772682d1827f3663535220e920966c6a62579dd07d45e4bc38b21516735c2ad");
+    }
+    45%{
+        background-image: url("https://img.freepik.com/free-photo/tranquil-scene-nature-beauty-majestic-mountain-landscape-generated-by-artificial-intelligence_25030-65564.jpg?w=1380&t=st=1715537738~exp=1715538338~hmac=a772682d1827f3663535220e920966c6a62579dd07d45e4bc38b21516735c2ad");
+    }
+    50%{
+        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+    }
+    70%{
+        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+    }
+    75%{
+        background-image: url("https://cdn.discordapp.com/attachments/771440968729231370/1235635390162010162/Snapchat-1718028863.jpg?ex=66419ce2&is=66404b62&hm=d15e238f9309ceb6ed095f3c688286f82988b71b58dce5992765f9c1d94d7c8a&");
+    }
+    95%{
+        background-image: url("https://cdn.discordapp.com/attachments/771440968729231370/1235635390162010162/Snapchat-1718028863.jpg?ex=66419ce2&is=66404b62&hm=d15e238f9309ceb6ed095f3c688286f82988b71b58dce5992765f9c1d94d7c8a&");
+    }
 }
 
 .home .content h3{
@@ -293,8 +322,11 @@ header .fa-bars{
     flex-wrap: wrap;
     width: 100%;
     gap: 1.5rem;
-    padding-top: 15px;
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
+}
+.icons-box{
+    display: flex;
+    gap: 1.2rem;
 }
 .icons-container .heading{
     position: relative;
