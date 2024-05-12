@@ -1,4 +1,8 @@
-
+window.onload = function(){
+    document.getElementById("loading").style.visibility = "visible";
+    setTimeout(7380)
+    document.getElementById("loading").style.visibility = "collapse";
+}
 
 gsap.fromTo(
     '.loading-page',
