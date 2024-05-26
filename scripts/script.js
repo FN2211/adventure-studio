@@ -84,3 +84,26 @@ gsap.fromTo(
     }
 );
 
+const AdventureInfoModal = document.getElementById("AdventureModal");
+const openAdventureInfoModal = document.getElementById("AdventureModalOpen");
+const closeAdventureInfoModal = document.getElementById("AdventureModalClose");
+
+openAdventureInfoModal.addEventListener('click', () => {
+    AdventureInfoModal.show();
+})
+
+closeAdventureInfoModal.addEventListener('click', () => {
+    AdventureInfoModal.close();
+})
+
+const Adventure2InfoModal = document.getElementById("Adventure2Modal");
+const openAdventure2InfoModal = document.getElementById("Adventure2ModalOpen");
+const closeAdventure2InfoModal = document.getElementById("Adventure2ModalClose");
+
+openAdventure2InfoModal.addEventListener('click', () => {
+    Adventure2InfoModal.show();
+})
+
+closeAdventure2InfoModal.addEventListener('click', () => {
+    Adventure2InfoModal.close();
+})
