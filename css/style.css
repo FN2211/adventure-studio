@@ -371,7 +371,7 @@ header .fa-bars{
 
 .products{
     min-height: 100vh;
-    background:url("../assets/logo.png") no-repeat;
+    background: #fff;
     background-size: cover;
     background-position: center;
 }
@@ -389,97 +389,104 @@ header .fa-bars{
 }
 
 .products .box-container .box{
-    flex: 1 1 30rem;
+    width: 150%;
+    height: 100rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
     background: #000000;
     position: relative;
 }
-
-.products .box-container .box .discount{
+.projekte-content {
+    padding-top: 45rem;
+    padding-left: 10rem;
+}
+.projekte-content .projekt-image{
     position: absolute;
-    top: 1rem; left: 1rem;
-    padding: .7rem 1rem;
-    font-size: 2rem;
-    color: #000;
-    background: rgb(255, 255, 255);
-    z-index: 1;
-    border-radius: .5rem;
+    width: 40%;
+    height: 65%;
+    right: 5rem;
+    bottom: 20rem;
 }
-
-.products .box-container .box .image{
-    position: relative;
-    text-align: center;
-    padding-top: 2rem;
-    overflow: hidden;
+.projekte-content .projekt-image img{
+    height: 100%;
+    width: 100%;
 }
-
-.products .box-container .box .image img{
-    height: 25rem;
+.projekte-content h1{
+    font-size: 75px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
 }
-
-.products .box-container .box:hover .image img{
-    transform: scale(1.1);
-}
-
-.products .box-container .box .image .icons{
-    position: absolute;
-    bottom: -7rem; left: 0; right: 0;
-    display: flex;
-}
-
-.products .box-container .box:hover .image .icons{
-    bottom: 0;
-}
-
-.products .box-container .box .image .icons a{
-    display: inline-block;
-    margin-top: 1rem;
-    background: #333;
-    color: #fff;
-    padding: 0.9rem 3.5rem;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.products .box-container .box .image .icons .cart-btn{
-    position: relative;
-    border-left: .1rem solid #fff7;
-    border-right: .1rem solid #fff7;
-    width: 50%;
-    left: 25%;
-}
-
-.products .box-container .box .image .icons a:hover{
-    background: #ffffff;
-    color: #000;
-}
-
-.products .box-container .box .content{
-    padding: 2rem;
-    text-align: center;
-}
-
-
-.products .box-container .box .content h3{
-    font-size: 2.5rem;
-    color: #ffffff;
-}
-
-.products .box-container .box .content .price{
-    font-size: 2.5rem;
+.projekte-content h3{
+    font-size: 18px;
+    font-weight: 600;
     color: #7C8097;
-    font-weight: bolder;
-    padding-top: 1rem;
 }
-
-.products .box-container .box .content .price span{
-    font-size: 1.5rem;
+.projekte-content p{
+    max-width: 100%;
+    width: 480px;
     color: #B7B8C0;
-    font-weight: lighter;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.projekte-content a,
+.projekte-content button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.projekte-content .trailer{
+    cursor: no-drop;
+    color: #333;
+    border: 1px solid #333;
+    background: transparent;
+}
+.projekte-content a:hover,
+.projekte-content button:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    transition: .4s;
 }
 
+
+.modal{
+    position: relative;
+    bottom: 50rem;
+    min-height: 400px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+}
+.modal h2{
+    font-size: 25px;
+    color: white;
+}
+.modal p{
+    display: inline-block;
+    color: #B7B8C0;
+    font-size: 22px;
+}
+.modal button{
+    position: absolute;
+    top: 0;
+    right: 1ch;
+    color: white;
+    background: red;
+}
 .team{
     background: #eee;
     align-items: center;
