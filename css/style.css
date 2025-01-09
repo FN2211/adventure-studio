@@ -167,6 +167,7 @@ header .navbar a:hover{
 }
 
 header .icons a{
+    visibility: hidden;
     font-size: 2.5rem;
     color: #fff;
     margin-left: 1.5rem;
@@ -236,14 +237,14 @@ header .fa-bars{
 
 .home .content h3{
     position: relative;
-    left: 15px;
+    left: 20px;
     font-size: 6rem;
     color: #252525;
 }
 
 .home .content span{
     position: relative;
-    left: 15px;
+    left: 20px;
     font-size: 3.5rem;
     color:var(--pink);
     padding: 1rem 0;
@@ -252,7 +253,8 @@ header .fa-bars{
 
 .home .content p{
     position: relative;
-    left: 15px;
+    left: 20px;
+    margin-right: 15px;
     font-size: 1.5rem;
     color: #333;
     padding: 1rem 0;
