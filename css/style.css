@@ -257,6 +257,7 @@ header .fa-bars{
     color: #333;
     padding: 1rem 0;
     line-height: 1.5;
+    text-transform: none;
 }
 
 .home .content a{
