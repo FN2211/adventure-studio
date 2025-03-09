@@ -97,11 +97,13 @@ section{
 }
 
 footer{
+    position: absolute;
     background: #000000;
     font-size: 14px;
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 footer a{
     text-decoration: none;
@@ -593,6 +595,10 @@ header .fa-bars{
     .icons-container .icons span{
         font-size: 1.7rem;
     }
+
+    .game-img{
+        display: none;
+    }
 }
 
 @media (max-width:450px){
@@ -606,7 +612,6 @@ header .fa-bars{
     }
 
 }
-
 .game-landing-section{
     position: fixed;
     width: 100%;
@@ -620,15 +625,21 @@ header .fa-bars{
 .game-background img{
     width: 100%;
     height: 100%;
-
+    color: rgba(67, 70, 75, 0.6);
     filter: blur(30px);
 }
+.game-body{
+    display: flex;
+    flex-wrap: wrap;
+}
 .game-content-box{
+    display: block;
     position: absolute;
     top: 150px;
     left: 150px;
     height: 30vh;
-    width: 60vh;
+    min-width: 30%;
+    padding: 20px;
 }
 .game-content-box h3{
     font-size: 32px;
@@ -653,13 +664,57 @@ header .fa-bars{
 .game-content-box a:hover{
     background: #e48900;
 }
+.game-img{
+    position: absolute;
+    top: 150px;
+    right: 5%;
+    height: 30vh;
+    width: 40vh;
+}
+.game-img img{
+    width: 100%;
+    height: 100%;
+}
 .game-spacer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-    height: 10vh;
+    height: 7vh;
     background: #333;
 }
-
-
+.game-spacer .border{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    height: 90%;
+    width: 2px;
+    background-color: #B7B8C0;
+    border-radius: 5px;
+}
+.game-spacer .info1{
+    padding: 5px;
+    border-radius: 5px;
+    background: #000;
+    color: #B7B8C0;
+    font-size: 16px;
+    position: absolute;
+    top: 2vh;
+    margin-left: 7vh;
+}
+.game-spacer .info2{
+    text-align: left;
+    color: #B7B8C0;
+    position: relative;
+    font-size: 13px;
+    top: 10px;
+    left: 52%;
+    max-width: 27vh;
+}
+.game-info-body{
+    background: #252525;
+    height: 100%;
+}
 
 .wartung-container{
     width: 100vw;
