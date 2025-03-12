@@ -378,6 +378,10 @@ header .fa-bars{
     min-height: 100vh;
     background: #000;
 }
+.products .heading{
+    border-radius: 6px;
+    box-shadow: 0px 6px 7px var(--pink);
+}
 .products .cards{
     position: relative;
     align-items: center;
@@ -392,13 +396,19 @@ header .fa-bars{
 }
 
 .product-card{
+    border-radius: 5px;
     text-align: left;
     position: relative;
-    height: 40vh;
+    height: 42vh;
+    min-height: 42vh;
     background: #fff;
     width: 600px;
     margin: 20px;
     overflow: hidden;
+}
+.product-card a{
+    text-decoration: none;
+    color: #000;
 }
 .product-card:hover{
     box-shadow: 5px 5px 5px var(--pink);
@@ -433,15 +443,17 @@ header .fa-bars{
     bottom: 10px;
 }
 
-.card-footer a{
+.card-footer .icons{
     position: absolute;
-    bottom: 4px;
+    top: 5%;
     right: 0px;
     font-size: 16px;
     color: #000;
 }
 
 .card-footer .info{
+    position: relative;
+    left: 5px;
     font-size: 15px;
 }
 
