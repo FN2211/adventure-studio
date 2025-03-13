@@ -662,6 +662,7 @@ header .fa-bars{
     font-weight: 600;
 }
 .game-content-box a{
+    cursor: not-allowed;
     position: absolute;
     bottom: 0px;
     background: var(--pink);
