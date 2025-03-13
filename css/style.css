@@ -95,6 +95,26 @@ html{
 section{
     padding: 2rem 9%;
 }
+form input, textarea {
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    border: 2px solid;
+    border-color: #494949;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+form input {
+    width: 70%;
+    height: 50px;
+}
+  
+form textarea {
+   width: 70%;
+   resize: none;
+   height: 300px;
+   padding-top: 5px;
+}
 
 footer{
     position: absolute;
@@ -541,90 +561,6 @@ header .fa-bars{
     color: #fff;
 }
 
-
-
-
-/* media */
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header{
-        padding: 2rem;
-    }
-
-    section{
-        padding: 2rem;
-    }
-
-    .home{
-        background-position: left;
-    }
-
-}
-
-@media (max-width:1200px){
-    
-    header .fa-bars{
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #000000;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        clip-path: polygon(0 0, 100% 0, 100% 0,  0 0);
-    }
-
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #3b3b3b;
-        border: .1rem solid rgba(0, 0, 0, .1);
-        display: block;
-    }
-
-    .home .content h3{
-        font-size: 5rem;
-    }
-
-    .home .content span{
-        font-size: 2.5rem;
-    }
-
-    .icons-container .icons h3{
-        font-size: 2rem;
-    }
-    
-    .icons-container .icons span{
-        font-size: 1.7rem;
-    }
-
-    .game-img{
-        display: none;
-    }
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .heading{
-        font-size: 3rem;
-    }
-
-}
 .game-landing-section{
     width: 100%;
     height: 60vh;
@@ -785,7 +721,7 @@ header .fa-bars{
     position: relative;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 6.5vh;
+    padding-top: 100px;
     min-height: 100%;
     justify-content: center;
     align-items: center;
@@ -799,24 +735,26 @@ header .fa-bars{
     padding: 1vh;
     padding-bottom: 2vh;
     min-height: 90vh;
-    background: #000;
+    background: var(--pink);
     border-radius: 12px;
-    box-shadow: 5px 5px 5px var(--pink);
+    box-shadow: 5px 5px 5px var(--pink);   
 }
+
 .contribute-container .cardheader{
     width: 100%;
-    max-height: 40px;
 }
 .cardheader h3{
     font-size: 30px;
-    color: var(--pink);
-    background: #252525;
+    color: #fff;
+    background: #1a1a1a;
     border-radius: 12px;
+    margin: 10px;
+    padding: 6px;
 }
 .contribute-container .welcome{
     padding: 10px;
     font-size: 22px;
-    color: #fff;
+    color: #000;
 }
 .contribute-container form{
     position: relative;
@@ -825,7 +763,7 @@ header .fa-bars{
 }
 .contribute-info{
     margin-top: 20px;
-    background: #252525;
+    background: #1a1a1a;
     border-radius: 12px;
     min-height: 80vh;
     margin-bottom: 20px;
@@ -836,10 +774,11 @@ header .fa-bars{
     font-size: 22px;
     padding-left: 10px;
     text-align: left;
+    margin-bottom: 50px;
 }
 .role{
     margin-top: 20px;
-    background: #252525;
+    background: #1a1a1a;
     border-radius: 12px;
     min-height: 22vh;
     padding: 20px;
@@ -874,8 +813,8 @@ header .fa-bars{
     box-sizing: border-box;
 }
 .select{
-    background: #2a2f3b;
-    color: #fff;
+    background: #fff;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -890,14 +829,14 @@ header .fa-bars{
     box-shadow: 0 0 0.8em var(--pink);
 }
 .select:hover{
-    background: #323741;
+    background: #c0c0c0;
 }
 .caret{
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid #000;
     transition: 0.3s;
 }
 .caret-rotate{
@@ -906,8 +845,8 @@ header .fa-bars{
 .menu{
     list-style: none;
     padding: 0.2em 0.5em;
-    background: #323741;
-    border: 1px #363a43 solid;
+    background: #3b3b3b;
+    border: 1px #272727 solid;
     box-shadow: 0 0 0.5em 1em rgba(0, 0, 0, .2);
     border-radius: 0.5em;
     color: #9fa5b5;
@@ -928,12 +867,124 @@ header .fa-bars{
     cursor: pointer;
 }
 .menu li:hover{
-    background: #2a2d35;
+    background: #c0c0c0;
+    color: #000;
 }
 .active{
-    background: #23242a;
+    background: #fff;
+    color: #000;
 }
 .menu-open{
     display: block;
     opacity: 1;
+}
+
+
+
+/* media */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:1200px){
+    
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000000;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0,  0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #3b3b3b;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+
+    .game-img{
+        display: none;
+    }
+
+    .contribute-section{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+    }
+    form input, textarea {
+        font-size: 15px;
+        margin-bottom: 5px;
+        border-radius: 1rem;
+        border: 2px solid;
+        border-color: #494949;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    form input {
+        width: 95%;
+        height: 40px;
+    }
+      
+    form textarea {
+       width: 95%;
+       resize: none;
+       height: 300px;
+       padding-top: 5px;
+    }
+    
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
 }

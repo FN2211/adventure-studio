@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mitmachen</title>
+        <title>Mitmachen | Adventure Studio</title>
 
         <!-- font -->
         <link
@@ -25,6 +25,7 @@
         <label for="toggler" class="fas fa-bars"></label>
 
         <a href="index.html#products" class="logo"><img src="./assets/little_logo.png" />Adventure Studio<span>-Team</span></a>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </header>
     
     <section id="contribute-section" class="contribute-section">
@@ -35,7 +36,7 @@
             <div class="welcome">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum culpa est aliquam sed aperiam dolorem veniam facere doloremque accusantium unde, exercitationem voluptates impedit, odit magnam atque pariatur possimus quos.</p>
             </div>
-            <form action="#">
+            <form action="?" id="form" method="post">
                 <div class="role">
                     <h4>Bitte wählen:</h4>
                     <p>Hier siehst du eine Übersicht an Bereichen, in welchen wir Verstärkung suchen.</p>
@@ -61,7 +62,17 @@
                 </div>
                 <div class="contribute-info">
                     <h4>Über dich:</h4>
+                    <div class="name-container">
+                        <input type="text" placeholder="Name" required="True" id="name" tabindex="1" class="text_input">
+                        <input type="email" placeholder="E-Mail" required="True" id="email" tabindex="2" class="text_input">
+                        <textarea type="text" placeholder="Text" required="True" id="content" tabindex="3" class="text_input"></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <div class="g-recaptcha" data-sitekey="6LfKp_MqAAAAADySnLTk40VUWzxSBqm0fKuTBfOZ"></div>
+                        <input type="submit" id="submit-btn">
+                    </div>
                 </div>
+                
             </form>
         </div>
     </section>
@@ -74,8 +85,12 @@
     </footer>
     <style>
         html{
-            background: #000;
-            background-image: url(./assets/little_logo.png);
+            background: #dddddd;
+        }
+        @media (max-width:1200px){
+            section{
+                padding: 0px;
+            }
         }
     </style>
     <script src="scripts/form.js"></script>

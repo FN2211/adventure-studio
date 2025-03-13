@@ -1,5 +1,5 @@
 const dropdowns = document.querySelectorAll('.dropdown');
-const roleText = document.querySelector('.role-text')
+const roleText = document.querySelector('.role-text');
 
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
@@ -9,7 +9,7 @@ dropdowns.forEach(dropdown => {
     const selected = dropdown.querySelector('.selected');
 
 
-    
+
     select.addEventListener('click', () => {
 
         select.classList.toggle('select-clicked');
@@ -18,7 +18,7 @@ dropdowns.forEach(dropdown => {
     });
 
     options.forEach(option => {
-       option.addEventListener('click', () => {
+        option.addEventListener('click', () => {
             selected.innerText = option.innerText;
             select.classList.remove('select-clicked');
             caret.classList.remove('caret-rotate');
@@ -29,7 +29,7 @@ dropdowns.forEach(dropdown => {
             });
             setRoleDesc(option)
             option.classList.add('active');
-       });
+        });
     });
 });
 
@@ -37,7 +37,17 @@ function setRoleDesc(option) {
     if (option.innerText == "Artist") {
         roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
     } else if (option.innerText == "Developer") {
-        roleText.innerText ="Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
+        roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
     }
-        
+
 }
+
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    if (this.checkValidity()) {
+        console.log("Erfolgreich")
+    } else {
+        console.log("Fehler")
+    }
+})
