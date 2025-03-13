@@ -790,15 +790,16 @@ header .fa-bars{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-width: 1000px;
 }
 .contribute-section .contribute-container{
     display: block;
     position: relative;
     width: 100%;
     margin-top: 2.5vh;
+    padding: 1vh;
+    padding-bottom: 2vh;
     min-height: 90vh;
-    background: #4b4b4b;
+    background: #000;
     border-radius: 12px;
     box-shadow: 5px 5px 5px var(--pink);
 }
@@ -809,7 +810,7 @@ header .fa-bars{
 .cardheader h3{
     font-size: 30px;
     color: var(--pink);
-    background: #000;
+    background: #252525;
     border-radius: 12px;
 }
 .contribute-container .welcome{
@@ -822,10 +823,25 @@ header .fa-bars{
     height: 100%;
     width: 100%;
 }
+.contribute-info{
+    margin-top: 20px;
+    background: #252525;
+    border-radius: 12px;
+    min-height: 80vh;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.contribute-info h4{
+    color: var(--pink);
+    font-size: 22px;
+    padding-left: 10px;
+    text-align: left;
+}
 .role{
     margin-top: 20px;
     background: #252525;
     border-radius: 12px;
+    min-height: 22vh;
     padding: 20px;
 }
 .role h4{
@@ -839,6 +855,13 @@ header .fa-bars{
     font-size: 16px;
     padding-left: 10px;
     text-align: left;
+}
+.role .list{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .dropdown {
