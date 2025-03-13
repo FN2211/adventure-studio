@@ -68,8 +68,8 @@
                         <textarea type="text" placeholder="Text" required="True" id="content" tabindex="3" class="text_input"></textarea>
                     </div>
                     <div class="submit-btn">
-                        <div class="g-recaptcha" data-sitekey="6LfOp_MqAAAAAPQeLd6C9mkjSXDu9sAUpaG-8mQt" data-theme="dark", data-callback="recaptchaCallback"></div>
-                        <input type="hidden" id="recaptchaResponse" required>
+                        <div class="g-recaptcha" data-sitekey="6LfOp_MqAAAAAPQeLd6C9mkjSXDu9sAUpaG-8mQt" data-theme="dark" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
+                        <input class="captcha" type="" id="recaptchaResponse" name="recaptchaResponse" required="True">
                         <input type="submit" id="submit-btn">
                     </div>
                 </div>
@@ -81,6 +81,15 @@
     <footer>
         <script>
             document.write(new Date().getFullYear());
+
+            function recaptchaCallback(token) {
+                document.getElementById("recaptchaResponse").value = token
+            }
+
+            function recaptchaExpired() {
+                document.getElementById("recaptchaResponse").value = "";
+            }
+
         </script>
         &copy; Adventure Studio
     </footer>

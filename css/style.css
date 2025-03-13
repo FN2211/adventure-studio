@@ -753,6 +753,13 @@ header .fa-bars{
     align-items: center;
     text-align: center;
 }
+.submit-btn .captcha{
+    position: relative;
+    display: fixed;
+    opacity: 0;
+    top: -100px;
+    align-self: center;
+}
 .submit-btn .g-recaptcha{
     justify-self: center;
     margin-top: 10px;
