@@ -37,7 +37,7 @@ function setRoleDesc(option) {
     if (option.innerText == "Artist") {
         roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
     } else if (option.innerText == "Developer") {
-        roleText.innerText ="Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
+        roleText.innerText ="Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
     }
         
 }
