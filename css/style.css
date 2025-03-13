@@ -352,6 +352,7 @@ header .fa-bars{
     padding: 2rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     flex: 1 1 25rem;
     top: 5px;
     margin-top: 15px;
@@ -777,4 +778,16 @@ header .fa-bars{
         bottom: 105%;
         opacity: 1;
     }
+}
+
+.contribute-section{
+    position: relative;
+    min-height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.contribute-container{
+    position: absolute;
+    height: 100%;
 }
