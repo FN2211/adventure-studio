@@ -1,7 +1,7 @@
-:root{
+:root {
     --pink: #d1bc00;
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +9,13 @@
     outline: none;
     border: none;
     text-decoration: none;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 .logo:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
-.loading-page{
+.loading-page {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -32,7 +32,7 @@
     z-index: 0;
 }
 
-#svg{
+#svg {
     stroke-width: 3px;
     stroke: #ffffff;
     fill-opacity: 0;
@@ -40,15 +40,15 @@
     animation: draw 8s ease;
 }
 @keyframes draw {
-    0%{
+    0% {
         stroke-dashoffset: 8000;
     }
-    100%{
+    100% {
         stroke-dashoffset: 0;
     }
 }
 
-.loading-logo-name{
+.loading-logo-name {
     color: #fff;
     font-size: 30px;
     letter-spacing: 12px;
@@ -57,14 +57,14 @@
     opacity: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4rem;
     color: #fff;
@@ -73,11 +73,11 @@ html{
     background: rgba(255, 255, 255, 0.05);
 }
 
-.heading span{
+.heading span {
     color: var(--pink);
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -88,14 +88,15 @@ html{
     font-size: 1.7rem;
 }
 
-.btn:hover{
-    background:var(--pink) ;
+.btn:hover {
+    background: var(--pink);
 }
 
-section{
+section {
     padding: 2rem 9%;
 }
-form input, textarea {
+form input,
+textarea {
     font-size: 15px;
     margin-bottom: 10px;
     border-radius: 1rem;
@@ -108,24 +109,23 @@ form input {
     width: 70%;
     height: 50px;
 }
-  
-form textarea {
-   width: 70%;
-   resize: none;
-   height: 300px;
-   padding-top: 5px;
-}
-.submit-btn input{
-    width: 50%;
 
+form textarea {
+    width: 70%;
+    resize: none;
+    height: 300px;
+    padding-top: 5px;
 }
-.submit-btn input:hover{
+.submit-btn input {
+    width: 50%;
+}
+.submit-btn input:hover {
     color: #fff;
     background-color: var(--pink);
     border-color: #fff;
 }
 
-footer{
+footer {
     position: absolute;
     background: #000000;
     font-size: 14px;
@@ -134,20 +134,20 @@ footer{
     padding: 20px;
     width: 100%;
 }
-footer a{
+footer a {
     text-decoration: none;
     color: #ffffff;
     padding-left: 5px;
     padding-right: 5px;
 }
-footer a:hover{
+footer a:hover {
     color: black;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: #fff;
-    border: .1rem var(--pink);
+    border: 0.1rem var(--pink);
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -161,7 +161,7 @@ header{
     box-shadow: 0 12px 8px rgba(0, 0, 0, 0.3);
 }
 
-header .logo img{
+header .logo img {
     display: inline-block;
     margin-top: -7px;
     position: relative;
@@ -169,7 +169,7 @@ header .logo img{
     width: 50px;
 }
 
-header .logo{
+header .logo {
     position: relative;
     display: flex;
     margin-top: 1px;
@@ -178,46 +178,46 @@ header .logo{
     font-weight: bolder;
 }
 
-header .logo span{
-    color:var(--pink);
+header .logo span {
+    color: var(--pink);
 }
 
-header .navbar a{
+header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #fff;
 }
 
-header .navbar a:hover{
+header .navbar a:hover {
     color: black;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: #fff;
-    border: .1rem var(--pink);
+    border: 0.1rem var(--pink);
     font-size: 2.2rem;
 }
 
-header .icons a{
+header .icons a {
     visibility: hidden;
     font-size: 2.5rem;
     color: #fff;
     margin-left: 1.5rem;
 }
 
-header .icons a:hover{
+header .icons a:hover {
     color: var(--pink);
 }
 
-header #toggler{
+header #toggler {
     display: none;
 }
 
-header .fa-bars{
+header .fa-bars {
     font-size: 3rem;
     color: #fff;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .3);
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
     display: none;
 }
 
@@ -232,56 +232,56 @@ header .fa-bars{
     animation: bgChange 60s linear infinite;
 }
 
-.home .content{
+.home .content {
     max-width: 65rem;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes bgChange{
-    0%{
+@keyframes bgChange {
+    0% {
         background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
     }
-    20%{
+    20% {
         background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
     }
-    25%{
+    25% {
         background-image: url("https://img.freepik.com/free-photo/man-with-backpack-standing-rock-looking-valley_1142-55163.jpg?t=st=1715539567~exp=1715543167~hmac=24e98e161ad0fdac833c51d7c5181528d2adb43ff356315ac428e6b7dc80b72c&w=1380");
     }
-    45%{
+    45% {
         background-image: url("https://img.freepik.com/free-photo/man-with-backpack-standing-rock-looking-valley_1142-55163.jpg?t=st=1715539567~exp=1715543167~hmac=24e98e161ad0fdac833c51d7c5181528d2adb43ff356315ac428e6b7dc80b72c&w=1380");
     }
-    50%{
+    50% {
         background-image: url("https://img.freepik.com/free-photo/one-person-hiking-mountain-peak-enjoying-nature-beauty-freedom-generated-by-artificial-intelligence_24640-131202.jpg?t=st=1715539591~exp=1715543191~hmac=c594efad2a33f5123121cf3d01a3284dc4c577f65504eabad7946b2bd17db353&w=2000");
     }
-    70%{
+    70% {
         background-image: url("https://img.freepik.com/free-photo/one-person-hiking-mountain-peak-enjoying-nature-beauty-freedom-generated-by-artificial-intelligence_24640-131202.jpg?t=st=1715539591~exp=1715543191~hmac=c594efad2a33f5123121cf3d01a3284dc4c577f65504eabad7946b2bd17db353&w=2000");
     }
-    75%{
+    75% {
         background-image: url("https://img.freepik.com/free-photo/anime-style-mountains-landscape_23-2151135329.jpg?t=st=1715539620~exp=1715543220~hmac=07493c8fe13a5a3287856804ac6255c2e74ca38b92e169a027826385908b02b2&w=1800");
     }
-    95%{
+    95% {
         background-image: url("https://img.freepik.com/free-photo/anime-style-mountains-landscape_23-2151135329.jpg?t=st=1715539620~exp=1715543220~hmac=07493c8fe13a5a3287856804ac6255c2e74ca38b92e169a027826385908b02b2&w=1800");
     }
 }
 
-.home .content h3{
+.home .content h3 {
     position: relative;
     left: 20px;
     font-size: 6rem;
     color: #252525;
 }
 
-.home .content span{
+.home .content span {
     position: relative;
     left: 20px;
     font-size: 3.5rem;
-    color:var(--pink);
+    color: var(--pink);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
-.home .content p{
+.home .content p {
     position: relative;
     left: 20px;
     margin-right: 15px;
@@ -292,7 +292,7 @@ header .fa-bars{
     text-transform: none;
 }
 
-.home .content a{
+.home .content a {
     position: relative;
     left: 15px;
 }
@@ -349,7 +349,7 @@ header .fa-bars{
     line-height: 1.5;
 }
  */
-.icons-container{
+.icons-container {
     background: #fcff33e1;
     display: inline-block;
     flex-wrap: wrap;
@@ -357,27 +357,26 @@ header .fa-bars{
     gap: 1.5rem;
     padding-bottom: 5rem;
 }
-.icons-box{
+.icons-box {
     display: flex;
     gap: 1.2rem;
 }
-.icons-container .heading{
+.icons-container .heading {
     position: relative;
     background: #000;
     box-shadow: 0 6px 7px #000000;
     border-radius: 6px;
-    
 }
 
-.icons-container a{
+.icons-container a {
     color: var(--pink);
     text-decoration: underline;
 }
 
-.icons-container .icons{
+.icons-container .icons {
     position: relative;
     background: #000000;
-    border: .1rem solid rgba(0, 0, 0, .1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -385,34 +384,34 @@ header .fa-bars{
     flex: 1 1 25rem;
     top: 5px;
     margin-top: 15px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
-.icons-container .icons img{
+.icons-container .icons img {
     height: 5rem;
     margin-right: 2rem;
 }
 
-.icons-container .icons h3{
-    color: #7C8097;
+.icons-container .icons h3 {
+    color: #7c8097;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
-.icons-container .icons span{
+.icons-container .icons span {
     color: #ffffff;
     font-size: 1.3rem;
 }
 
-.products{
+.products {
     min-height: 100vh;
     background: #000;
 }
-.products .heading{
+.products .heading {
     border-radius: 6px;
     box-shadow: 0px 6px 7px var(--pink);
 }
-.products .cards{
+.products .cards {
     position: relative;
     align-items: center;
     text-align: center;
@@ -420,12 +419,12 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
 }
-.products .heading{
+.products .heading {
     background: #fff;
     color: #000;
 }
 
-.product-card{
+.product-card {
     border-radius: 5px;
     text-align: left;
     position: relative;
@@ -436,26 +435,26 @@ header .fa-bars{
     margin: 20px;
     overflow: hidden;
 }
-.product-card a{
+.product-card a {
     text-decoration: none;
     color: #000;
 }
-.product-card:hover{
+.product-card:hover {
     box-shadow: 5px 5px 5px var(--pink);
 }
-.product-card:hover .product-desc h3{
+.product-card:hover .product-desc h3 {
     color: var(--pink);
 }
 
-.product-card:hover .card-footer a{
+.product-card:hover .card-footer a {
     transform: scale(1.1, 1.1);
 }
 
-.product-img img{
+.product-img img {
     width: 100%;
     height: 26vh;
 }
-.product-card .break{
+.product-card .break {
     display: block;
     position: absolute;
     width: 100%;
@@ -464,7 +463,7 @@ header .fa-bars{
     background: #000;
 }
 
-.product-card .card-footer{
+.product-card .card-footer {
     padding: 2px;
     display: block;
     position: absolute;
@@ -473,7 +472,7 @@ header .fa-bars{
     bottom: 10px;
 }
 
-.card-footer .icons{
+.card-footer .icons {
     position: absolute;
     top: 5%;
     right: 0px;
@@ -481,45 +480,45 @@ header .fa-bars{
     color: #000;
 }
 
-.card-footer .info{
+.card-footer .info {
     position: relative;
     left: 5px;
     font-size: 15px;
 }
 
-.product-desc{
+.product-desc {
     font-weight: 500;
     max-height: 130px;
     padding: 16px;
     overflow-y: scroll;
 }
-.product-desc::-webkit-scrollbar{
+.product-desc::-webkit-scrollbar {
     scroll-behavior: smooth;
 }
 
-.product-desc h3{
+.product-desc h3 {
     font-size: 28px;
     margin-bottom: 4px;
 }
 
-.product-desc p{
+.product-desc p {
     font-size: 18px;
     line-height: 1.3;
 }
 
-.team{
+.team {
     background: #fff;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.team .heading{
+.team .heading {
     background: #000;
     box-shadow: 0 6px 7px #000000;
     border-radius: 6px;
 }
 
-.team-card{
+.team-card {
     margin-left: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -532,64 +531,64 @@ header .fa-bars{
     box-shadow: 0 6px 6px #000000;
     color: #fff;
 }
-.team-card:hover{
+.team-card:hover {
     background: #fff;
     color: #000;
     transform: translateY(-10px);
     outline: 2px solid #000;
     box-shadow: 0 12px 12px #000;
 }
-.team-card img{
+.team-card img {
     border-radius: 100%;
     margin-top: 60px;
     width: 132px;
     height: 128px;
 }
-.team-card h1{
+.team-card h1 {
     font-size: 35px;
 }
-.team-card .title{
+.team-card .title {
     font-size: 20px;
-    color: #7C8097;
+    color: #7c8097;
 }
-.team-desc{
+.team-desc {
     font-size: 14px;
     margin-left: 65px;
     margin-right: 65px;
     margin-bottom: 20px;
-    color: #B7B8C0;
+    color: #b7b8c0;
 }
-.team-card:hover .title{
+.team-card:hover .title {
     color: var(--pink);
 }
-.team-card:hover .team-desc{
-    color:#4b4b4b;
+.team-card:hover .team-desc {
+    color: #4b4b4b;
 }
 
-#kontakt h1 span{
+#kontakt h1 span {
     color: #fff;
 }
 
-.game-landing-section{
+.game-landing-section {
     width: 100%;
     height: 60vh;
 }
-.game-landing-section .game-background{
+.game-landing-section .game-background {
     width: 100%;
     height: 60vh;
     background: #000;
 }
-.game-background img{
+.game-background img {
     width: 100%;
     height: 100%;
     color: rgba(67, 70, 75, 0.6);
     filter: blur(30px);
 }
-.game-body{
+.game-body {
     display: flex;
     flex-wrap: wrap;
 }
-.game-content-box{
+.game-content-box {
     display: block;
     position: absolute;
     top: 150px;
@@ -598,15 +597,15 @@ header .fa-bars{
     min-width: 30%;
     padding: 20px;
 }
-.game-content-box h3{
+.game-content-box h3 {
     font-size: 32px;
 }
-.game-content-box p{
+.game-content-box p {
     margin-top: 15px;
     font-size: 16px;
     font-weight: 600;
 }
-.game-content-box a{
+.game-content-box a {
     cursor: not-allowed;
     position: absolute;
     bottom: 0px;
@@ -619,21 +618,21 @@ header .fa-bars{
     color: #000;
     font-size: 20px;
 }
-.game-content-box a:hover{
+.game-content-box a:hover {
     background: #e48900;
 }
-.game-img{
+.game-img {
     position: absolute;
     top: 150px;
     right: 5%;
     height: 30vh;
     width: 40vh;
 }
-.game-img img{
+.game-img img {
     width: 100%;
     height: 100%;
 }
-.game-spacer{
+.game-spacer {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -641,42 +640,42 @@ header .fa-bars{
     height: 7vh;
     background: #333;
 }
-.game-spacer .border{
+.game-spacer .border {
     position: absolute;
     top: 5%;
     left: 50%;
     height: 90%;
     width: 2px;
-    background-color: #B7B8C0;
+    background-color: #b7b8c0;
     border-radius: 5px;
 }
-.game-spacer .info1{
+.game-spacer .info1 {
     padding: 5px;
     border-radius: 5px;
     background: #000;
-    color: #B7B8C0;
+    color: #b7b8c0;
     font-size: 16px;
     position: absolute;
     top: 2vh;
     margin-left: 7vh;
 }
-.game-spacer .info2{
+.game-spacer .info2 {
     text-align: left;
-    color: #B7B8C0;
+    color: #b7b8c0;
     position: relative;
     font-size: 13px;
     top: 10px;
     left: 52%;
     max-width: 50vh;
 }
-.game-info-body{
+.game-info-body {
     position: relative;
     background: #252525;
     height: 1600px;
     top: 7vh;
 }
 
-.wartung-container{
+.wartung-container {
     width: 100vw;
     height: 100vw;
     background-image: url("../assets/Untitled.png");
@@ -685,29 +684,29 @@ header .fa-bars{
     padding: 0 8%;
     position: relative;
 }
-.wartung-container .logo{
+.wartung-container .logo {
     width: 120px;
     padding: 20px 0;
     cursor: pointer;
 }
-.wartung-content{
+.wartung-content {
     top: 25%;
     position: absolute;
     transform: translateY(-50%);
     color: #fff;
 }
-.wartung-content p{
+.wartung-content p {
     font-size: 20px;
     font-weight: 400;
 }
-.wartung-content h1{
+.wartung-content h1 {
     font-size: 64px;
     font-weight: 500;
 }
-.wartung-content h1 span{
+.wartung-content h1 span {
     color: var(--pink);
 }
-.rocket{
+.rocket {
     width: 25px;
     position: absolute;
     right: 10%;
@@ -716,7 +715,7 @@ header .fa-bars{
     animation: rocket 4s linear infinite;
 }
 @keyframes rocket {
-    0%{
+    0% {
         bottom: 50%;
         opacity: 0;
     }
@@ -726,7 +725,7 @@ header .fa-bars{
     }
 }
 
-.contribute-section{
+.contribute-section {
     position: relative;
     padding-left: 20%;
     padding-right: 20%;
@@ -736,7 +735,7 @@ header .fa-bars{
     align-items: center;
     text-align: center;
 }
-.contribute-section .contribute-container{
+.contribute-section .contribute-container {
     display: block;
     position: relative;
     width: 100%;
@@ -744,31 +743,31 @@ header .fa-bars{
     padding: 1vh;
     padding-bottom: 2vh;
     min-height: 90vh;
-    background: var(--pink);
+    background: #fcff33e1;
     border-radius: 12px;
-    box-shadow: 5px 5px 5px var(--pink);   
+    /*box-shadow: 5px 5px 5px #fcff33e1;*/
 }
-.submit-btn{
+.submit-btn {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.submit-btn .captcha{
+.submit-btn .captcha {
     position: relative;
     display: fixed;
     opacity: 0;
     top: -100px;
     align-self: center;
 }
-.submit-btn .g-recaptcha{
+.submit-btn .g-recaptcha {
     justify-self: center;
     margin-top: 10px;
     margin-bottom: 30px;
 }
-.contribute-container .cardheader{
+.contribute-container .cardheader {
     width: 100%;
 }
-.cardheader h3{
+.cardheader h3 {
     font-size: 30px;
     color: #fff;
     background: #1a1a1a;
@@ -776,17 +775,17 @@ header .fa-bars{
     margin: 10px;
     padding: 6px;
 }
-.contribute-container .welcome{
+.contribute-container .welcome {
     padding: 10px;
     font-size: 22px;
     color: #000;
 }
-.contribute-container form{
+.contribute-container form {
     position: relative;
     height: 100%;
     width: 100%;
 }
-.contribute-info{
+.contribute-info {
     margin-top: 20px;
     background: #1a1a1a;
     border-radius: 12px;
@@ -794,33 +793,33 @@ header .fa-bars{
     margin-bottom: 20px;
     padding: 20px;
 }
-.contribute-info h4{
+.contribute-info h4 {
     color: var(--pink);
     font-size: 22px;
     padding-left: 10px;
     text-align: left;
     margin-bottom: 50px;
 }
-.role{
+.role {
     margin-top: 20px;
     background: #1a1a1a;
     border-radius: 12px;
     min-height: 22vh;
     padding: 20px;
 }
-.role h4{
+.role h4 {
     color: var(--pink);
     font-size: 22px;
     padding-left: 10px;
     text-align: left;
 }
-.role p{
+.role p {
     color: #fff;
     font-size: 16px;
     padding-left: 10px;
     text-align: left;
 }
-.role .list{
+.role .list {
     color: #fff;
     font-size: 16px;
     text-align: left;
@@ -833,11 +832,11 @@ header .fa-bars{
     position: relative;
     margin: 10px;
 }
-.dropdown *{
+.dropdown * {
     font-size: 22px;
     box-sizing: border-box;
 }
-.select{
+.select {
     background: #fff;
     color: #000;
     display: flex;
@@ -849,14 +848,14 @@ header .fa-bars{
     cursor: pointer;
     transition: background 0.3s;
 }
-.select-clicked{
+.select-clicked {
     border: 2px var(--pink) solid;
     box-shadow: 0 0 0.8em var(--pink);
 }
-.select:hover{
+.select:hover {
     background: #c0c0c0;
 }
-.caret{
+.caret {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -864,15 +863,15 @@ header .fa-bars{
     border-top: 6px solid #000;
     transition: 0.3s;
 }
-.caret-rotate{
+.caret-rotate {
     transform: rotate(180deg);
 }
-.menu{
+.menu {
     list-style: none;
     padding: 0.2em 0.5em;
     background: #3b3b3b;
     border: 1px #272727 solid;
-    box-shadow: 0 0 0.5em 1em rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0.5em 1em rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
     color: #9fa5b5;
     position: absolute;
@@ -885,101 +884,98 @@ header .fa-bars{
     transition: 0.2s;
     z-index: 1;
 }
-.menu li{
+.menu li {
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
     cursor: pointer;
 }
-.menu li:hover{
+.menu li:hover {
     background: #c0c0c0;
     color: #000;
 }
-.active{
+.active {
     background: #fff;
     color: #000;
 }
-.menu-open{
+.menu-open {
     display: block;
     opacity: 1;
 }
 
-
-
 /* media */
-@media (max-width:991px){
-
-    html{
+@media (max-width: 991px) {
+    html {
         font-size: 55%;
     }
 
-    header{
+    header {
         padding: 2rem;
     }
 
-    section{
+    section {
         padding: 2rem;
     }
 
-    .home{
+    .home {
         background-position: left;
     }
 }
 
-@media (max-width:1200px){
-    
-    header .fa-bars{
+@media (max-width: 1200px) {
+    header .fa-bars {
         display: block;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background: #000000;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        clip-path: polygon(0 0, 100% 0, 100% 0,  0 0);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header #toggler:checked ~ .navbar{
+    header #toggler:checked ~ .navbar {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    header .navbar a{
+    header .navbar a {
         margin: 1.5rem;
         padding: 1.5rem;
         background: #3b3b3b;
-        border: .1rem solid rgba(0, 0, 0, .1);
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: block;
     }
 
-    .home .content h3{
+    .home .content h3 {
         font-size: 5rem;
     }
 
-    .home .content span{
+    .home .content span {
         font-size: 2.5rem;
     }
 
-    .icons-container .icons h3{
+    .icons-container .icons h3 {
         font-size: 2rem;
     }
-    
-    .icons-container .icons span{
+
+    .icons-container .icons span {
         font-size: 1.7rem;
     }
 
-    .game-img{
+    .game-img {
         display: none;
     }
 
-    .contribute-section{
+    .contribute-section {
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 50px;
     }
-    form input, textarea {
+    form input,
+    textarea {
         font-size: 15px;
         margin-bottom: 5px;
         border-radius: 1rem;
@@ -992,24 +988,21 @@ header .fa-bars{
         width: 95%;
         height: 40px;
     }
-      
+
     form textarea {
-       width: 95%;
-       resize: none;
-       height: 300px;
-       padding-top: 5px;
+        width: 95%;
+        resize: none;
+        height: 300px;
+        padding-top: 5px;
     }
-    
 }
 
-@media (max-width:450px){
-
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 50%;
     }
 
-    .heading{
+    .heading {
         font-size: 3rem;
     }
-
 }
