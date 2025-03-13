@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Game Title</title>
+        <title>Mitmachen</title>
 
         <!-- font -->
         <link
@@ -25,27 +25,48 @@
         <label for="toggler" class="fas fa-bars"></label>
 
         <a href="index.html#products" class="logo"><img src="./assets/little_logo.png" />Adventure Studio<span>-Team</span></a>
-
-        <div class="icons">
-            <a href="#mitglieder" class="fas fa-user"></a>
-        </div>
     </header>
-    <section id="contribute" class="contribute-section">
+    
+    <section id="contribute-section" class="contribute-section">
         <div class="contribute-container">
-            
+            <div class="cardheader">
+                <h3>Mitmachen</h3>
+            </div>
+            <div class="welcome">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum culpa est aliquam sed aperiam dolorem veniam facere doloremque accusantium unde, exercitationem voluptates impedit, odit magnam atque pariatur possimus quos.</p>
+            </div>
+            <form action="#">
+                <div class="role">
+                    <h4>Bitte wählen:</h4>
+                    <p>Hier siehst du eine Übersicht an Bereichen, in welchen wir Verstärkung suchen.</p>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">NONE</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Artist</li>
+                            <li>Developer</li>
+                        </ul>
+                    </div>
+                    <h4>Beschreibung:</h4>
+                    <p class="role-text">Falls du keine Auswahlmöglichkeiten zur Verfügung hast, suchen wir aktuell keine weitere Unterstützung</p>
+                </div>
+            </form>
         </div>
     </section>
+
     <footer>
         <script>
             document.write(new Date().getFullYear());
         </script>
         &copy; Adventure Studio
     </footer>
-
     <style>
         html{
             background: #303030;
         }
     </style>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
