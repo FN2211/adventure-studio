@@ -115,6 +115,15 @@ form textarea {
    height: 300px;
    padding-top: 5px;
 }
+.submit-btn input{
+    width: 50%;
+
+}
+.submit-btn input:hover{
+    color: #fff;
+    background-color: var(--pink);
+    border-color: #fff;
+}
 
 footer{
     position: absolute;
@@ -739,7 +748,16 @@ header .fa-bars{
     border-radius: 12px;
     box-shadow: 5px 5px 5px var(--pink);   
 }
-
+.submit-btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.submit-btn .g-recaptcha{
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .contribute-container .cardheader{
     width: 100%;
 }

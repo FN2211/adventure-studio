@@ -51,3 +51,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
         console.log("Fehler")
     }
 })
+
+function recaptchaCallback() {
+    return TRUE
+}
