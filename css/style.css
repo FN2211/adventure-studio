@@ -757,8 +757,9 @@ header .fa-bars{
     position: relative;
     display: fixed;
     opacity: 0;
-    top: -100px;
+    top: -155px;
     align-self: center;
+    z-index: -1;
 }
 .submit-btn .g-recaptcha{
     justify-self: center;
