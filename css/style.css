@@ -605,11 +605,16 @@ header .fa-bars {
 }
 .game-landing-section {
     width: 100%;
-    height: 60vh;
+    min-height: 500px;
+    height: 50vh;
 }
 .game-landing-section .game-background {
+    position: absolute;
+    top: 75px;
+    z-index: -1;
     width: 100%;
-    height: 60vh;
+    min-height: 425px;
+    height: 50vh;
     background: #000;
 }
 .game-background img {
@@ -618,14 +623,14 @@ header .fa-bars {
     color: rgba(67, 70, 75, 0.6);
     filter: blur(30px);
 }
-.game-body {
-    flex-wrap: wrap;
-    display: flex;
+.game-body{
+    min-height: 1000px;
+    position: relative;
 }
 .game-content-box {
     display: block;
     position: absolute;
-    top: 150px;
+    top: 15vh;
     left: 150px;
     height: 30vh;
     min-width: 30%;
@@ -668,8 +673,8 @@ header .fa-bars {
     position: absolute;
     top: 150px;
     right: 5%;
-    height: 30vh;
-    width: 40vh;
+    width: 25vw;
+    max-width: 500px;
 }
 .game-img img {
     width: 100%;
@@ -693,32 +698,33 @@ header .fa-bars {
     background-color: #b7b8c0;
     border-radius: 5px;
 }
-.game-spacer .info1 {
-    padding: 5px;
-    border-radius: 5px;
-    background: #000;
-    color: #b7b8c0;
-    font-size: 16px;
-    position: relative;
-    max-width: 250px;
-    top: 2vh;
-    margin-left: 20px;
+.c{
+    display: flex;
 }
-.game-spacer .info2 {
-    text-align: left;
-    color: #b7b8c0;
+.info1 {
+    padding: 5px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background: #474747;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
     position: relative;
-    font-size: 13px;
-    top: 10px;
-    left: 52%;
+    width: fit-content;
+    align-self: center;
+    border: 1px solid #fff;
+}
+.info2 span{
+    text-align: left;
+    position: relative;
+    font-size: 10px;
+    top: 5px;
     max-width: 50vh;
 }
 .game-info-body {
     position: relative;
     background: #252525;
-    height: 70vh;
-    min-height: 1300px;
-    top: 7vh;
+    min-height: 1000px;
 }
 
 .wartung-container {
@@ -1034,7 +1040,12 @@ header .fa-bars {
         margin: 0px;
         left: 0px;
     }
-    
+    .c{
+        display: block;
+    }
+    .info1{
+        margin-left: 0px;
+    }
 
     .contribute-section {
         padding-left: 0px;

@@ -50,8 +50,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     if (this.checkValidity()) {
         if (changedSelection) {
-            console.log("Erfolgreich")
-            errorText.innerText = ""
+            downloadPDF();
+            console.log("Erfolgreich");
+            errorText.innerText = "";
             changedSelection = false;
         } else {
             errorText.innerText = "Du musst vorher eine Stelle auswählen!"
@@ -60,3 +61,24 @@ document.getElementById('form').addEventListener('submit', function (event) {
         console.log("Fehler")
     }
 })
+
+function downloadPDF() {
+    const { jsPDF } = window.jsPDF;
+    const doc = new jsPDF();
+
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const message = document.getElementById('content').value
+    const role = roleText.innerText
+
+    doc.text("Berwerbungs-Daten", 10, 10);
+    doc.text(`Stelle: ${role}`, 10, 20);
+    doc.text(`Name: ${name}`, 10, 30);
+    doc.text(`E-Mail: ${email}`, 10, 40);
+    doc.text(`Nachricht:`, 10, 50)
+    doc.text(message, 10, 60);
+
+    const date = new Date();
+
+    doc.save(`${name}-${date.toLocaleString("de-DE")}`)
+}
