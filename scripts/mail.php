@@ -39,11 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // E-Mail senden
         $mail->send();
         
-        
+        header("Location: ../thankyou.html");
     } catch (Exception $e) {
-        echo "Fehler: {$mail->ErrorInfo}";
+        /* echo "Fehler: {$mail->ErrorInfo}"; */
     }
 } else {
-    echo "Ungültige Anfrage.";
+    /* echo "Ungültige Anfrage."; */
 }
 ?>
