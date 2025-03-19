@@ -1,5 +1,6 @@
 const dropdowns = document.querySelectorAll('.dropdown');
 const roleText = document.querySelector('.role-text');
+const rolerequired = document.getElementById("role-required")
 
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
@@ -36,8 +37,10 @@ dropdowns.forEach(dropdown => {
 function setRoleDesc(option) {
     if (option.innerText == "Artist") {
         roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
+        rolerequired.value = "Artist"
     } else if (option.innerText == "Developer") {
         roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
+        rolerequired.value = "Developer"
     }
 
 }

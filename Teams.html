@@ -27,16 +27,15 @@
         <a href="index.html#products" class="logo"><img src="./assets/little_logo.png" />Adventure Studio<span>-Team</span></a>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </header>
-    
-    <section id="contribute-section" class="contribute-section">
-        <div class="contribute-container">
-            <div class="cardheader">
-                <h3>Mitmachen</h3>
-            </div>
-            <div class="welcome">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum culpa est aliquam sed aperiam dolorem veniam facere doloremque accusantium unde, exercitationem voluptates impedit, odit magnam atque pariatur possimus quos.</p>
-            </div>
-            <form action="?" id="form" method="post">
+    <form action="?" id="form" method="post">
+        <section id="contribute-section" class="contribute-section">
+            <div class="contribute-container">
+                <div class="cardheader">
+                    <h3>Mitmachen</h3>
+                </div>
+                <div class="welcome">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum culpa est aliquam sed aperiam dolorem veniam facere doloremque accusantium unde, exercitationem voluptates impedit, odit magnam atque pariatur possimus quos.</p>
+                </div>
                 <div class="role">
                     <h4>Bitte wählen:</h4>
                     <p>Hier siehst du eine Übersicht an Bereichen, in welchen wir Verstärkung suchen.</p>
@@ -65,18 +64,18 @@
                     <div class="name-container">
                         <input type="text" placeholder="Name" required="True" id="name" tabindex="1" class="text_input">
                         <input type="email" placeholder="E-Mail" required="True" id="email" tabindex="2" class="text_input">
-                        <textarea type="text" placeholder="Text" required="True" id="content" tabindex="3" class="text_input"></textarea>
+                        <textarea type="text" placeholder="Hier solltest du uns weitere Informationen übermitteln." required="True" id="content" tabindex="3" class="text_input"></textarea>
                     </div>
                     <div class="submit-btn">
                         <div class="g-recaptcha" data-sitekey="6LfOp_MqAAAAAPQeLd6C9mkjSXDu9sAUpaG-8mQt" data-theme="dark" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
                         <input type="submit" id="submit-btn">
                         <input class="captcha" type="" id="recaptchaResponse" name="recaptchaResponse" required="True">
+                        <input class="role-required" type="" id="role-required" name="role-required" required="True">
                     </div>
                 </div>
-                
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+    </form>
 
     <footer>
         <script>
