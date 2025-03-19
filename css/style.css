@@ -527,7 +527,7 @@ header .fa-bars {
     background: #000000;
     border-radius: 6px;
     display: inline-block;
-    width: 30rem;
+    width: 35rem;
     box-shadow: 0 6px 6px #000000;
     color: #fff;
 }
@@ -555,7 +555,7 @@ header .fa-bars {
     font-size: 14px;
     margin-left: 65px;
     margin-right: 65px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #b7b8c0;
 }
 .team-card:hover .title {
