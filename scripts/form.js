@@ -52,13 +52,21 @@ function setRoleDesc(option) {
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    let formData = new FormData(this);
+    let formData = new FormData();
+    formData.append('name', document.getElementById('name').value)
+    formData.append('email', document.getElementById('email').value)
+    formData.append('subject', subject.value)
+    formData.append('message', document.getElementById('message').value)
 
     if (this.checkValidity()) {
         if (changedSelection) {
-            fetch('scripts/mail.php', {
+            fetch('./scripts/mail.php', {
                 method: "POST",
                 body: formData
+            }).then(data => {
+                console.log(data)
+            }).catch(error => {
+                console.error(error)
             })
             console.log("Erfolgreich");
             errorText.innerText = "";
