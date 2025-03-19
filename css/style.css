@@ -268,6 +268,7 @@ header .fa-bars {
 .home .content h3 {
     position: relative;
     left: 20px;
+    right: 10px;
     font-size: 6rem;
     color: #252525;
 }
@@ -275,6 +276,7 @@ header .fa-bars {
 .home .content span {
     position: relative;
     left: 20px;
+    right: 10px;
     font-size: 3.5rem;
     color: var(--pink);
     padding: 1rem 0;
@@ -740,8 +742,7 @@ header .fa-bars {
     position: relative;
     width: 100%;
     margin-top: 2.5vh;
-    padding: 1vh;
-    padding-bottom: 2vh;
+    padding: 2rem;
     min-height: 90vh;
     background: #fcff33e1;
     border-radius: 12px;
@@ -800,8 +801,7 @@ header .fa-bars {
     background: #1a1a1a;
     border-radius: 12px;
     min-height: 80vh;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 .contribute-info h4 {
     color: var(--pink);
@@ -809,6 +809,10 @@ header .fa-bars {
     padding-left: 10px;
     text-align: left;
     margin-bottom: 50px;
+}
+.contribute-info .error {
+    color: #ff0000;
+    font-size: 18px;
 }
 .role {
     margin-top: 20px;

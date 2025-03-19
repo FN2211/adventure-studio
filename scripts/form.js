@@ -1,6 +1,7 @@
 const dropdowns = document.querySelectorAll('.dropdown');
 const roleText = document.querySelector('.role-text');
-const rolerequired = document.getElementById("role-required")
+const errorText = document.getElementById('error-text');
+var changedSelection = false;
 
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
@@ -20,6 +21,7 @@ dropdowns.forEach(dropdown => {
 
     options.forEach(option => {
         option.addEventListener('click', () => {
+            changedSelection = true;
             selected.innerText = option.innerText;
             select.classList.remove('select-clicked');
             caret.classList.remove('caret-rotate');
@@ -37,10 +39,8 @@ dropdowns.forEach(dropdown => {
 function setRoleDesc(option) {
     if (option.innerText == "Artist") {
         roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
-        rolerequired.value = "Artist"
     } else if (option.innerText == "Developer") {
         roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
-        rolerequired.value = "Developer"
     }
 
 }
@@ -49,7 +49,12 @@ document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     if (this.checkValidity()) {
-        console.log("Erfolgreich")
+        if (changedSelection) {
+            console.log("Erfolgreich")
+            errorText.innerText = ""
+        } else {
+            errorText.innerText = "Du musst vorher eine Stelle auswählen!"
+        }
     } else {
         console.log("Fehler")
     }
