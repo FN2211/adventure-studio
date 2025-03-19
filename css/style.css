@@ -132,6 +132,7 @@ form textarea {
 
 footer {
     position: absolute;
+    position-anchor: bottom;
     background: #000000;
     font-size: 14px;
     color: #ffffff;
@@ -789,6 +790,21 @@ header .fa-bars {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url("../assets/2024-04-27_23.34.11.png");
+    background-size: cover;
+}
+.thankyou-section {
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 100px;
+    min-height: 100%;
+    padding-bottom: 39.5vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+/*     margin-bottom: 37.5vh; */
+    background-image: url("../assets/2024-04-27_23.34.11.png");
 }
 .contribute-section .contribute-container {
     display: block;
@@ -801,6 +817,25 @@ header .fa-bars {
     border-radius: 12px;
     /*box-shadow: 5px 5px 5px #fcff33e1;*/
 }
+.thankyou-section .thankyou-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 2.5vh;
+    padding: 2rem;
+    min-height: 40vh;
+    background: #fcff33e1;
+    border-radius: 12px;
+    /*box-shadow: 5px 5px 5px #fcff33e1;*/
+}
+.thankyou-section .mails {
+    color: #fcff33e1;
+    text-decoration: underline;
+}
+.thankyou-section .mails:hover {
+    color: var(--pink);
+}
+
 .submit-btn {
     justify-content: center;
     align-items: center;
@@ -831,6 +866,9 @@ header .fa-bars {
 .contribute-container .cardheader {
     width: 100%;
 }
+.thankyou-container .cardheader {
+    width: 100%;
+}
 .cardheader h3 {
     font-size: 30px;
     color: #fff;
@@ -844,11 +882,17 @@ header .fa-bars {
     font-size: 22px;
     color: #000;
 }
+.thankyou-container .welcome {
+    padding: 10px;
+    font-size: 22px;
+    color: #000;
+}
 .contribute-container form {
     position: relative;
     height: 100%;
     width: 100%;
 }
+
 .contribute-info {
     margin-top: 20px;
     background: #1a1a1a;
@@ -856,7 +900,21 @@ header .fa-bars {
     min-height: 80vh;
     padding: 20px 20px 20px 0px;
 }
+.thankyou-info {
+    margin-top: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    min-height: 80vh;
+    padding: 20px 20px 20px 0px;
+}
 .contribute-info h4 {
+    color: var(--pink);
+    font-size: 22px;
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.thankyou-info h4 {
     color: var(--pink);
     font-size: 22px;
     padding-left: 10px;
