@@ -268,28 +268,28 @@ header .fa-bars {
 
 @keyframes bgChange {
     0% {
-        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+        background-image: url('../assets/2024-04-27_23.34.11.png');
     }
     20% {
-        background-image: url("https://img.freepik.com/free-photo/majestic-mountain-range-reflects-tranquil-flowing-water-breathtaking-landscape-generated-by-artificial-intelligence_25030-62693.jpg?t=st=1715535916~exp=1715539516~hmac=408fbc13512bfe081e89687e5567ea5b1bf9b9e1d7a46db65d03b04c9eb976d8&w=1380");
+        background-image: url('../assets/2024-04-27_23.34.11.png');
     }
     25% {
-        background-image: url("https://img.freepik.com/free-photo/man-with-backpack-standing-rock-looking-valley_1142-55163.jpg?t=st=1715539567~exp=1715543167~hmac=24e98e161ad0fdac833c51d7c5181528d2adb43ff356315ac428e6b7dc80b72c&w=1380");
+        background-image: url('../assets/2024-04-27_23.34.04.png');
     }
     45% {
-        background-image: url("https://img.freepik.com/free-photo/man-with-backpack-standing-rock-looking-valley_1142-55163.jpg?t=st=1715539567~exp=1715543167~hmac=24e98e161ad0fdac833c51d7c5181528d2adb43ff356315ac428e6b7dc80b72c&w=1380");
+        background-image: url('../assets/2024-04-27_23.34.04.png');
     }
     50% {
-        background-image: url("https://img.freepik.com/free-photo/one-person-hiking-mountain-peak-enjoying-nature-beauty-freedom-generated-by-artificial-intelligence_24640-131202.jpg?t=st=1715539591~exp=1715543191~hmac=c594efad2a33f5123121cf3d01a3284dc4c577f65504eabad7946b2bd17db353&w=2000");
+        background-image: url('../assets/2024-02-17_16.19.23.png');
     }
     70% {
-        background-image: url("https://img.freepik.com/free-photo/one-person-hiking-mountain-peak-enjoying-nature-beauty-freedom-generated-by-artificial-intelligence_24640-131202.jpg?t=st=1715539591~exp=1715543191~hmac=c594efad2a33f5123121cf3d01a3284dc4c577f65504eabad7946b2bd17db353&w=2000");
+        background-image: url('../assets/2024-02-17_16.19.23.png');
     }
     75% {
-        background-image: url("https://img.freepik.com/free-photo/anime-style-mountains-landscape_23-2151135329.jpg?t=st=1715539620~exp=1715543220~hmac=07493c8fe13a5a3287856804ac6255c2e74ca38b92e169a027826385908b02b2&w=1800");
+        background-image: url('../assets/2024-04-23_20.33.52.png');
     }
     95% {
-        background-image: url("https://img.freepik.com/free-photo/anime-style-mountains-landscape_23-2151135329.jpg?t=st=1715539620~exp=1715543220~hmac=07493c8fe13a5a3287856804ac6255c2e74ca38b92e169a027826385908b02b2&w=1800");
+        background-image: url('../assets/2024-04-23_20.33.52.png');
     }
 }
 
@@ -464,6 +464,7 @@ header .fa-bars {
     width: 600px;
     margin: 20px;
     overflow: hidden;
+    border: 1px solid #fff;
 }
 .product-card a {
     text-decoration: none;
@@ -598,7 +599,6 @@ header .fa-bars {
 #kontakt h1 span {
     color: #fff;
 }
-
 .game-landing-section {
     width: 100%;
     height: 60vh;
