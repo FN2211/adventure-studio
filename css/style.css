@@ -617,6 +617,9 @@ header .fa-bars {
     height: 50vh;
     background: #000;
 }
+#subject{
+    display: none;
+}
 .game-background img {
     width: 100%;
     height: 100%;

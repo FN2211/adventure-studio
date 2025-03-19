@@ -1,6 +1,7 @@
 const dropdowns = document.querySelectorAll('.dropdown');
 const roleText = document.querySelector('.role-text');
 const errorText = document.getElementById('error-text');
+const subject = document.getElementById('subject');
 var changedSelection = false;
 
 dropdowns.forEach(dropdown => {
@@ -37,9 +38,12 @@ dropdowns.forEach(dropdown => {
 });
 
 function setRoleDesc(option) {
+    const date = new Date();
     if (option.innerText == "Artist") {
+        subject.value = `Artist am ${date.toLocaleString("de-DE")}`
         roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. Du wirst direkt an der Art Direction unser Projekte eingebunden, und wirst deiner Kreativität freien Lauf lassen können und somit dein eigenen Stil ganz groß einbringen können. Du solltest ein gewisses Interesse fürs zeichnen und pixel-art mitbringen"
     } else if (option.innerText == "Developer") {
+        subject.value = `Developer am ${date.toLocaleString("de-DE")}`
         roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. Du wirst direkt von unserem Lead Developer in das Programmieren unserer Projekte eingebunden, und wirst auch deine eigenen Ideen einbringen können, auf die wir uns immer freuen. "
     }
 
@@ -48,9 +52,14 @@ function setRoleDesc(option) {
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
+    let formData = new FormData(this);
+
     if (this.checkValidity()) {
         if (changedSelection) {
-            downloadPDF();
+            fetch('scripts/mail.php', {
+                method: "POST",
+                body: formData
+            })
             console.log("Erfolgreich");
             errorText.innerText = "";
             changedSelection = false;
@@ -61,24 +70,3 @@ document.getElementById('form').addEventListener('submit', function (event) {
         console.log("Fehler")
     }
 })
-
-function downloadPDF() {
-    const { jsPDF } = window.jsPDF;
-    const doc = new jsPDF();
-
-    const name = document.getElementById('name').value
-    const email = document.getElementById('email').value
-    const message = document.getElementById('content').value
-    const role = roleText.innerText
-
-    doc.text("Berwerbungs-Daten", 10, 10);
-    doc.text(`Stelle: ${role}`, 10, 20);
-    doc.text(`Name: ${name}`, 10, 30);
-    doc.text(`E-Mail: ${email}`, 10, 40);
-    doc.text(`Nachricht:`, 10, 50)
-    doc.text(message, 10, 60);
-
-    const date = new Date();
-
-    doc.save(`${name}-${date.toLocaleString("de-DE")}`)
-}
