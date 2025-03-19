@@ -38,9 +38,9 @@ dropdowns.forEach(dropdown => {
 
 function setRoleDesc(option) {
     if (option.innerText == "Artist") {
-        roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. ..."
+        roleText.innerText = "Als Artist wirst du ein wichtiger Teil unseres Teams. Du wirst direkt an der Art Direction unser Projekte eingebunden, und wirst deiner Kreativität freien Lauf lassen können und somit dein eigenen Stil ganz groß einbringen können. Du solltest ein gewisses Interesse fürs zeichnen und pixel-art mitbringen"
     } else if (option.innerText == "Developer") {
-        roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. ..."
+        roleText.innerText = "Als Developer wirst du ein wichtiger Teil unseres Teams. Du wirst direkt von unserem Lead Developer in das Programmieren unserer Projekte eingebunden, und wirst auch deine eigenen Ideen einbringen können, auf die wir uns immer freuen. "
     }
 
 }
@@ -52,6 +52,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
         if (changedSelection) {
             console.log("Erfolgreich")
             errorText.innerText = ""
+            changedSelection = false;
         } else {
             errorText.innerText = "Du musst vorher eine Stelle auswählen!"
         }
