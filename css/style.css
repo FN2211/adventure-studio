@@ -604,131 +604,95 @@ header .fa-bars {
 #kontakt h1 span {
     color: #fff;
 }
-.game-landing-section {
+
+.game-container{
+    position: relative;
     width: 100%;
-    min-height: 500px;
-    height: 50vh;
-}
-.game-landing-section .game-background {
-    position: absolute;
-    top: 75px;
-    z-index: -1;
-    width: 100%;
-    min-height: 425px;
-    height: 50vh;
-    background: #000;
-}
-#subject{
-    display: none;
-}
-.game-background img {
-    width: 100%;
-    height: 100%;
-    color: rgba(67, 70, 75, 0.6);
-    filter: blur(30px);
-}
-.game-body{
     min-height: 1000px;
-    position: relative;
-}
-.game-content-box {
-    display: block;
-    position: absolute;
-    top: 15vh;
-    left: 150px;
-    height: 30vh;
-    min-width: 30%;
-    padding: 20px;
-}
-.game-content-box h3 {
-    font-size: 32px;
-}
-.game-content-box p {
-    max-width: 470px;
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 600;
-}
-.game-content-box img{
-    width: 40px;
-    margin-top: 30px;
-    margin-right: 5px;
-    margin-left: 10px;
-}
-.game-content-box a {
-    cursor: not-allowed;
-    display: flex;
-    max-width: 175px;
-    justify-content: center;
-    position: relative;
-    background: var(--pink);
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-}
-.game-content-box a:hover {
-    background: #e48900;
-}
-.game-img {
-    position: absolute;
-    top: 150px;
-    right: 5%;
-    width: 25vw;
-    max-width: 500px;
-}
-.game-img img {
-    width: 100%;
-    height: 100%;
-}
-.game-spacer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    height: 7vh;
-    background: #333;
-}
-.game-spacer .border {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    height: 90%;
-    width: 2px;
-    background-color: #b7b8c0;
-    border-radius: 5px;
-}
-.c{
-    display: flex;
-}
-.info1 {
-    padding: 5px;
-    margin-top: 0px;
-    border-radius: 5px;
-    background: #474747;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 5px;
-    position: relative;
-    width: fit-content;
-    align-self: center;
-    border: 1px solid #fff;
-}
-.info2 span{
     text-align: left;
-    position: relative;
-    font-size: 10px;
-    top: 5px;
-    max-width: 50vh;
 }
-.game-info-body {
+.game-container h3{
+    font-size: 24px;
+}
+.game-overview-container {
+    width: 100%;
+    min-height: 600px;
+    background: #1a1a1a;
+    display: flex;
+    border-radius: 5px;
+}
+.game-media{
+    width: 70%;
+    display: block;
+    justify-items: center;
+}
+.game-media img{
+    width: 100%;
+    height: 82%;
+}
+.game-media video{
+    width: 100%;
+    height: auto;
+}
+.game-media .media-scroll{
     position: relative;
-    background: #252525;
-    min-height: 1000px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.thumbnail{
+    position: relative;
+}
+.thumbnail .video-icon{
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: -2px;
+}
+.thumbnail img{
+    height: 100%;
+    cursor: pointer;
+}
+.thumbnail video{
+    height: 100%;
+    cursor: pointer;
+}
+.game-overview-info{
+    margin-left: 15px;
+    width: 30%;
+    display: block;
+}
+.game-overview-info img{
+    width: 100%;
+}
+.game-overview-desc{
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    top: 5px;
+}
+.game-info-top{
+    margin-top: 55px;
+}
+.game-overview-info-container p{
+    font-size: 13px;
+    color: #6e6e6e;
+}
+.game-overview-info-container p span{
+    margin-left: 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.game-overview-info-container p a{
+    margin-left: 15px;
+    font-size: 15px;
+    color: var(--pink);
 }
 
 .wartung-container {
@@ -1134,6 +1098,28 @@ header .fa-bars {
         height: 300px;
         padding-top: 5px;
     }
+
+    .game-overview-container{
+        display: block
+    }
+    .game-media .media-scroll{
+        height: 140px;
+    }
+    .game-overview-info{
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .game-overview-info-container{
+        margin-left: 15px;
+    }
+    .game-media{
+        width: 100%;
+    }
+    .media-scroll .thumbnail{
+        height: 100px;
+    }
+
 }
 
 @media (max-width: 450px) {
