@@ -616,7 +616,7 @@ header .fa-bars {
 }
 .game-overview-container {
     width: 100%;
-    min-height: 600px;
+    min-height: 618px;
     background: #1a1a1a;
     display: flex;
     border-radius: 5px;
@@ -693,6 +693,175 @@ header .fa-bars {
     margin-left: 15px;
     font-size: 15px;
     color: var(--pink);
+}
+.game-info-container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    margin-top: 20px;
+    min-height: 700px;
+}
+.game-left-container{
+    width: 25%;
+}
+.game-right-container{
+    width: 75%;
+    margin-right: 20px;
+}
+.game-download-container{
+    position: relative;
+    display: flex;
+    background: #1a1a1a;
+    opacity: 0.95;
+    min-height: 90px;
+    border-radius: 6px;
+}
+.game-download-container h3{
+    color: #fff;
+    margin-left: 30px;
+    width: 76%;
+    transform: translateY(25%);
+}
+.download-btn-box{
+    position: relative;
+    width: 22%;
+    align-self: center;
+    display: block;
+}
+.download-btn-box .download-btn{
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    right: 15px;
+    border-radius: 6px;
+    color: #000000;
+    background: #aaff0d;
+    border: 3px solid #000
+}
+.download-btn-box .os-icons{
+    text-align: right;
+    padding-right: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 15px;
+}
+.os-icons img{
+    width: 30px;
+    height: auto;
+}
+.game-news{
+    margin-top: 75px;
+}
+.game-news h3{
+    font-size: 22px;
+}
+.game-news h3 a{
+    margin-left: 100%;
+    font-size: 22px;
+}
+.game-news .spacer{
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.game-news-container{
+    min-height: 300px;
+}
+.game-info{
+    margin-top: 75px;
+}
+.game-info h3{
+    font-size: 22px;
+}
+.game-info .spacer{
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.game-info-box{
+    margin-top: 10px;
+    min-height: 600px;
+    background: #1a1a1a;
+    border-radius: 6px;
+}
+.game-info-box p{
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.game-info-box img{
+    padding: 20px;
+    width: 100%;
+}
+.game-specs{
+    margin-top: 75px;
+}
+.game-specs h3{
+    font-size: 22px;
+}
+.game-specs .spacer{
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.game-specs-container{
+    margin-top: 10px;
+    display: flex;
+    min-height: 200px;
+}
+.game-min-specs{
+    width: 100%;
+    margin-right: 10px;
+}
+.game-min-specs h3{
+    font-size: 12px;
+    color: #616161;
+}
+.game-opt-specs{
+    width: 100%;
+}
+.game-opt-specs h3{
+    font-size: 12px;
+    color: #616161;
+}
+.game-specs-container p{
+    color: #000000;
+    font-size: 15px;
+}
+.game-specs-container span{
+    color: #616161;
+    font-size: 15px;
+    display: flex;
+}
+.game-specs-container span p{
+    padding-left: 10px;
+}
+.game-tag-container{
+    background: #1a1a1a;
+    border-radius: 6px;
+    min-height: 100px;
+}
+.game-tag-container .game-tag{
+    position: relative;
+    justify-items: center;
+    width: 95%;
+    margin: 5px;
+    top: 5px;
+    display: flex;
+    background: #ffffff;
+    opacity: 0.95;
+    padding: 2px;
+}
+.game-tag img{
+    width: auto;
+    height: 25px;
+    background: #1a1a1a;
+}
+.game-tag p{
+    align-self: center;
+    padding-left: 15px;
+    font-size: 18px;
 }
 
 .wartung-container {
@@ -1118,6 +1287,18 @@ header .fa-bars {
     }
     .media-scroll .thumbnail{
         height: 100px;
+    }
+    .game-info-container{
+        display: block;
+    }
+    .game-right-container{
+        width: 100%;
+    }
+    .game-specs-container{
+        display: block;
+    }
+    .game-opt-specs{
+        margin-top: 20px;
     }
 
 }
