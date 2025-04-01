@@ -20,6 +20,10 @@
     font-size: 12px;
 }
 
+#subject{
+    display: none;
+}
+
 .loading-page {
     display: flex;
     justify-content: center;
@@ -616,23 +620,27 @@ header .fa-bars {
 }
 .game-overview-container {
     width: 100%;
-    min-height: 618px;
+    min-height: fit-content;
     background: #1a1a1a;
     display: flex;
     border-radius: 5px;
 }
+.game-media video{
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 .game-media{
     width: 70%;
     display: block;
     justify-items: center;
 }
-.game-media img{
-    width: 100%;
-    height: 82%;
-}
-.game-media video{
-    width: 100%;
+#main-media img{
+    max-width: 500px;
     height: auto;
+    padding: 10px;
 }
 .game-media .media-scroll{
     position: relative;

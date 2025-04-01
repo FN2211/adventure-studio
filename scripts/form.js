@@ -60,12 +60,12 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     if (this.checkValidity()) {
         if (changedSelection) {
-            fetch('./scripts/mail.php', {
+            fetch('/scripts/mail.php', {
                 method: "POST",
                 body: formData
             }).then(data => {
                 console.log(data)
-                window.open('../index.html')
+                window.open('/thankyou/')
             }).catch(error => {
                 console.error(error)
             })
