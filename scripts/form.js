@@ -65,6 +65,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
                 body: formData
             }).then(data => {
                 console.log(data)
+                window.open('../index.html')
             }).catch(error => {
                 console.error(error)
             })
