@@ -609,6 +609,10 @@ header .fa-bars {
     color: #fff;
 }
 
+#inactive-card *{
+    cursor: not-allowed;
+}
+
 .game-container{
     position: relative;
     width: 100%;
@@ -638,7 +642,8 @@ header .fa-bars {
     justify-items: center;
 }
 .game-media img{
-    max-width: 800px;
+    position: relative;
+    width: 100%;
     height: auto;
     padding: 10px;
 }
