@@ -65,7 +65,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
                 body: formData
             }).then(data => {
                 console.log(data)
-                window.open('/thankyou/')
+                window.location.href = "/thankyou/";
             }).catch(error => {
                 console.error(error)
             })
