@@ -45,14 +45,12 @@
     stroke-width: 3px;
     stroke: #ffffff;
     fill-opacity: 0;
-    stroke-dasharray: 8000;
-    animation: draw 8s ease;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    /*animation: draw 8s ease forwards;*/
 }
 @keyframes draw {
-    0% {
-        stroke-dashoffset: 8000;
-    }
-    100% {
+    to {
         stroke-dashoffset: 0;
     }
 }
@@ -995,12 +993,19 @@ header .fa-bars {
     align-items: center;
     text-align: center;
 }
+.submit-btn p{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    max-width: 500px;
+    margin-bottom: 5px;
+}
 .submit-btn .captcha {
     position: relative;
     display: fixed;
     opacity: 0;
     z-index: -2;
-    top: -150px;
+    top: -210px;
     align-self: center;
     cursor: default;
 }
