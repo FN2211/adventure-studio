@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giant Tic Tac Toe | Adventure Studio</title>
+
+        <!-- font -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css?v=1.0.6" />
+        <link rel="icon" type="image/png" href="/assets/little_logo.png" />
+    </head>
+<body>
+    <header class="secondary">
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="/#" class="logo"><img src="/assets/little_logo.png" />Adventure Studio<span>-Games</span></a>
+    </header>
+    <section id="contribute-section" class="contribute-section">
+        <div class="contribute-container">
+            <div class="game-container">
+                <h3>Giant Tic Tac Toe</h3>
+                <div class="game-overview-container">
+                    <div class="game-media">
+                        <img class="game-preview-img" id="mainMedia" src="./assets/Screenshot 2025-04-02 192714.png" alt="">
+                        <div class="media-scroll">
+                            <div class="thumbnail" onclick="changeMedia('./assets/Screenshot 2025-04-02 192714.png', 'image')">
+                                <img src="./assets/Screenshot 2025-04-02 192714.png" alt="">
+                            </div>
+                            <div class="thumbnail" onclick="changeMedia('./assets/Screenshot 2025-04-02 192741.png', 'image')">
+                                <img src="./assets/Screenshot 2025-04-02 192741.png" alt="">
+                            </div>
+                            <div class="thumbnail" onclick="changeMedia('./assets/Screenshot 2025-04-02 192805.png', 'image')">
+                                <img src="./assets/Screenshot 2025-04-02 192805.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-overview-info">
+                        <div class="game-cover-img">
+                            <img class="game-cover-img" src="./assets/Screenshot 2025-04-02 192609.png" alt="">
+                        </div>
+                        <div class="game-overview-info-container">
+                            <span class="game-overview-desc">Du kennst sicherlich schon Tic Tac Toe, aber hast du schon mal von Giant Tic Tac Toe gehört? Mit 10 untereinander interagierenden Tic Tac Toe Feldern, macht es nicht nur extrems Spaß, sondern es fördert einen auch dazu auf, sein Gehirn anzustrengen. Kopfschmerzen sind garantiert!</span>
+                            <p class="game-info-top">VERÖFFENTLICHUNG: <span>TBA</span></p>
+                            <p>ENTWICKLER: <a href="/#team">Adventure Studio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-info-container">
+                    <div class="game-right-container">
+                        <div class="game-download-container">
+                            <h3>Giant Tic Tac Toe</h3>
+                            <div class="download-btn-box">
+                                <div class="os-icons">
+                                    <img src="/assets/icons8-windows-10-100.png" alt="">
+                                    <img src="/assets/icons8-mac-100.png" alt="">
+                                    <img src="/assets/icons8-linux-100.png" alt="">
+                                </div>
+                                <a class="download-btn" href=""><p>BALD VERFÜGBAR</p></a>
+                            </div>
+                        </div>
+                        <!-- <div class="game-news">
+                            <h3>KÜRZLICHE EVENTS UND ANKÜNDIGUNGEN</h3>
+                            <div class="spacer"></div>
+                            <div class="game-news-container"></div>
+                        </div> -->
+                        <div class="game-info">
+                            <h3>INFOS ZUM SPIEL</h3>
+                            <div class="spacer"></div>
+                            <div class="game-info-box">
+                                <p>Du kennst sicherlich schon Tic Tac Toe, aber hast du schon mal von Giant Tic Tac Toe gehört? Mit 10 untereinander interagierenden Tic Tac Toe Feldern, macht es nicht nur extrems Spaß, sondern es fördert einen auch dazu auf, sein Gehirn anzustrengen. Kopfschmerzen sind garantiert!</p>
+                                <br>
+                                <p>Als eines der ersten Adventure Studio Projekte, die außerhalb von Minecraft erstellt wurden, kann sich dieses kleine Projekt auf jeden Fall sehen lassen</p>
+                                <br>
+                                <p>REGELN: Video <a href="https://youtube.com/shorts/_Na3a1ZrX7c?si=5QGCe40vSULC-IMV" target="_blank" rel="noopener noreferrer">hier <span>(*Du wirst auf eine externe Website weitergeleitet)</span></a> ansehen!</p>
+                                <br>
+                                <p>TIEBREAKER: Falls das äußere Feld in einem Unentschieden endet, gewinnt die Person, die die meisten Unterfelder gewonnen hat. Falls beide gleich viele Unterfelder gewonnen hat, handelt es sich um Remis.</p>
+                            </div>
+                        </div>
+                        <div class="game-specs">
+                            <h3>SYSTEMANFORDERUNGEN</h3>
+                            <div class="spacer"></div>
+                            <div class="game-specs-container">
+                                <div class="game-min-specs">
+                                    <h3>MINDESTANFORDERUNGEN:</h3>
+                                    <p>Setzt 64-Bit-Prozessor und -Betriebssystem voraus</p>
+                                    <span>Betriebssystem: <p>64-bit Windows 7 oder höher / 64-bit Linuxbetriebssystem / 64-bit MacOS</p></span>
+                                    <span>Prozessor: <p>Muss existieren</p></span>
+                                    <span>Arbeitsspeicher: <p>512 MB RAM</p></span>
+                                    <span>Grafik: <p>Muss existieren</p></span>
+                                    <span>DirectX: <p>Version 12</p></span>
+                                    <span>Netzwerk: <p>Keine-Internetverbindung</p></span>
+                                    <span>Speicherplatz: <p>100MB verfügbarer Speicherplatz</p></span>
+                                    <span>Zusätzliche Anmerkungen: <p>Ein Toaster sollte ausreichen</p></span>
+                                </div>
+                                <div class="game-opt-specs">
+                                    <h3>EMPFOHLEN:</h3>
+                                    <p>Setzt 64-Bit-Prozessor und -Betriebssystem voraus</p>
+                                    <span>Betriebssystem: <p>64-bit Windows 7 oder höher / 64-bit Linuxbetriebssystem / 64-bit MacOS</p></span>
+                                    <span>Prozessor: <p>Muss existieren</p></span>
+                                    <span>Arbeitsspeicher: <p>1 GB RAM</p></span>
+                                    <span>Grafik: <p>Muss existieren</p></span>
+                                    <span>DirectX: <p>Version 12</p></span>
+                                    <span>Netzwerk: <p>Keine-Internetverbindung</p></span>
+                                    <span>Speicherplatz: <p>100MB verfügbarer Speicherplatz</p></span>
+                                    <span>Zusätzliche Anmerkungen: <p>Auch hier reicht ein Toaster</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-left-container">
+                        <div class="game-tag-container">
+                            <div class="game-tag">
+                                <img src="/assets/icons8-gruppe-hintergrund-ausgewählte-64.png" alt="">
+                                <p>PvP-Spiele mit geteiltem Bildschirm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script>
+            document.write(new Date().getFullYear());
+        </script>
+        <script src="/scripts/media.js"></script>
+        &copy; Adventure Studio
+    </footer>
+    <style>
+        html{
+            background: #dddddd;
+        }
+        .download-btn{
+            cursor: not-allowed;
+        }
+        @media (max-width:1200px){
+            section{
+                padding: 0px;
+            }
+            .game-cover-img{
+                justify-self: center;
+                max-width: 500px;
+            }
+        }
+    </style>
+</body>
+</html>
