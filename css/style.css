@@ -38,6 +38,8 @@
     gap: 1rem;
     background-image: url("../assets/Untitled.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 0;
 }
 
