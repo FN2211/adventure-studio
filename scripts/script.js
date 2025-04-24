@@ -2,7 +2,7 @@ window.onload = function(){
     document.getElementById("loading").style.visibility = "visible";
     setTimeout(() => {
         document.getElementById("loading").style.visibility = "collapse";
-    }, "8000");
+    }, "6000");
 }
 
 gsap.fromTo(
@@ -11,7 +11,7 @@ gsap.fromTo(
     {
         opacity:0,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 
@@ -21,7 +21,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 
@@ -31,7 +31,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 gsap.fromTo(
@@ -40,7 +40,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 gsap.fromTo(
@@ -49,7 +49,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 gsap.fromTo(
@@ -58,7 +58,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 gsap.fromTo(
@@ -67,7 +67,7 @@ gsap.fromTo(
     {
         opacity:1,
         duration: 1.5,
-        delay: 6
+        delay: 4
     }
 );
 

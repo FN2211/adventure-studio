@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game Title | Adventure Studio</title>
+
+        <!-- font -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css?v=1.0.4" />
+        <link rel="icon" type="image/png" href="assets/little_logo.png" />
+    </head>
+<body>
+    <header class="secondary">
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="../index.html#products" class="logo"><img src="./assets/little_logo.png" />Adventure Studio<span>-Games</span></a>
+    </header>
+    <section id="contribute-section" class="contribute-section">
+        <div class="contribute-container">
+            <div class="game-container">
+                <h3>Game Title</h3>
+                <div class="game-overview-container">
+                    <div class="game-media">
+                        <img class="game-preview-img" id="mainMedia" src="https://s1.qwant.com/thumbr/474x316/9/e/44b1c0075451bd4a754fd245ce6f6e1a863485c3274625baccbcc8a5d0c212/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.n496R0eL_pxFJTVQligAHQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0" alt="">
+                        <div class="media-scroll">
+                            <div class="thumbnail" onclick="changeMedia('./assets/Trailer.mp4', 'video')">
+                                <div class="video-icon">
+                                    <img src="./assets/icons8-play-50.png" alt="">
+                                </div>
+                                <video src="./assets/Trailer.mp4">
+                                </video>
+                            </div>
+                            <div class="thumbnail" onclick="changeMedia('https://s1.qwant.com/thumbr/474x316/9/e/44b1c0075451bd4a754fd245ce6f6e1a863485c3274625baccbcc8a5d0c212/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.n496R0eL_pxFJTVQligAHQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0', 'image')">
+                                <img src="https://s1.qwant.com/thumbr/474x316/9/e/44b1c0075451bd4a754fd245ce6f6e1a863485c3274625baccbcc8a5d0c212/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.n496R0eL_pxFJTVQligAHQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-overview-info">
+                        <div class="game-cover-img">
+                            <img class="game-cover-img" src="https://s1.qwant.com/thumbr/474x316/9/e/44b1c0075451bd4a754fd245ce6f6e1a863485c3274625baccbcc8a5d0c212/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.n496R0eL_pxFJTVQligAHQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0" alt="">
+                        </div>
+                        <div class="game-overview-info-container">
+                            <span class="game-overview-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat quis cum quia minima consequuntur alias voluptatum autem iure excepturi accusamus non quos, in possimus deserunt? Voluptatibus, beatae. Incidunt, facere?</span>
+                            <p class="game-info-top">VERÖFFENTLICHUNG: <span>5. Feb. 2025</span></p>
+                            <p>ENTWICKLER: <a href="../index.html#team">Adventure Studio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-info-container">
+                    <div class="game-right-container">
+                        <div class="game-download-container">
+                            <h3>Game Title</h3>
+                            <div class="download-btn-box">
+                                <div class="os-icons">
+                                    <img src="assets/icons8-windows-10-100.png" alt="">
+                                    <img src="assets/icons8-mac-100.png" alt="">
+                                    <img src="assets/icons8-linux-100.png" alt="">
+                                </div>
+                                <a class="download-btn" href="">DOWNLOAD</a>
+                            </div>
+                        </div>
+                        <!-- <div class="game-news">
+                            <h3>KÜRZLICHE EVENTS UND ANKÜNDIGUNGEN</h3>
+                            <div class="spacer"></div>
+                            <div class="game-news-container"></div>
+                        </div> -->
+                        <div class="game-info">
+                            <h3>INFOS ZUM SPIEL</h3>
+                            <div class="spacer"></div>
+                            <div class="game-info-box">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sunt, eaque dolor maxime eum exercitationem? Consectetur, inventore aut repudiandae ut cumque voluptatum in laudantium consequatur voluptates, quis tempore, maiores magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi quaerat esse cum maxime numquam in aperiam ipsum et laudantium, quod, quam voluptas accusantium facere vel hic eius doloremque autem.</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam explicabo quae perspiciatis quo praesentium laudantium quam maiores molestias nobis unde voluptatem dolores sint optio totam quos sunt, quis porro.</p>
+                                <img src="https://s1.qwant.com/thumbr/474x316/9/e/44b1c0075451bd4a754fd245ce6f6e1a863485c3274625baccbcc8a5d0c212/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.n496R0eL_pxFJTVQligAHQHaE8%26pid%3DApi&q=0&b=1&p=0&a=0" alt="">
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem minus delectus, possimus nam eius placeat, deleniti aperiam explicabo ab, veniam temporibus recusandae est ducimus qui commodi esse? Iste, sunt nemo.</p>
+                            </div>
+                        </div>
+                        <div class="game-specs">
+                            <h3>SYSTEMANFORDERUNGEN</h3>
+                            <div class="spacer"></div>
+                            <div class="game-specs-container">
+                                <div class="game-min-specs">
+                                    <h3>MINDESTANFORDERUNGEN:</h3>
+                                    <p>Setzt 64-Bit-Prozessor und -Betriebssystem voraus</p>
+                                    <span>Betriebssystem: <p>64 bit Windows 10/11</p></span>
+                                    <span>Prozessor: <p>Intel Core i5-6600K</p></span>
+                                    <span>Arbeitsspeicher: <p>1 GB RAM</p></span>
+                                    <span>Grafik: <p>NVIDIA GeForce GTX 970 - 4GB</p></span>
+                                    <span>DirectX: <p>Version 12</p></span>
+                                    <span>Netzwerk: <p>Breitband-Internetverbindung</p></span>
+                                    <span>Speicherplatz: <p>100MB verfügbarer Speicherplatz</p></span>
+                                    <span>Zusätzliche Anmerkungen: <p>N/A</p></span>
+                                </div>
+                                <div class="game-opt-specs">
+                                    <h3>EMPFOHLEN:</h3>
+                                    <p>Setzt 64-Bit-Prozessor und -Betriebssystem voraus</p>
+                                    <span>Betriebssystem: <p>64 bit Windows 10/11</p></span>
+                                    <span>Prozessor: <p>Intel Core i7-11700K oder AMD Ryzen 7 5800X</p></span>
+                                    <span>Arbeitsspeicher: <p>2 GB RAM</p></span>
+                                    <span>Grafik: <p>NVIDIA GeForce RTX 5090 oder AMD RX 9070XT</p></span>
+                                    <span>DirectX: <p>Version 12</p></span>
+                                    <span>Netzwerk: <p>Breitband-Internetverbindung</p></span>
+                                    <span>Speicherplatz: <p>100MB verfügbarer Speicherplatz</p></span>
+                                    <span>Zusätzliche Anmerkungen: <p>N/A</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-left-container">
+                        <div class="game-tag-container">
+                            <div class="game-tag">
+                                <img src="/assets/icons8-gast-männlich-50.png" alt="">
+                                <p>Einzelspieler</p>
+                            </div>
+                            <div class="game-tag">
+                                <img src="/assets/icons8-gruppe-hintergrund-ausgewählte-64.png" alt="">
+                                <p>Koop-Spiele mit geteiltem Bildschirm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script>
+            document.write(new Date().getFullYear());
+        </script>
+        <script src="../scripts/media.js"></script>
+        &copy; Adventure Studio
+    </footer>
+    <style>
+        html{
+            background: #dddddd;
+        }
+        @media (max-width:1200px){
+            section{
+                padding: 0px;
+            }
+        }
+    </style>
+</body>
+</html>
